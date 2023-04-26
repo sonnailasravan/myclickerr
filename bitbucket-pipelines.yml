@@ -1,27 +1,30 @@
-#  Template maven-build
+#  Template NodeJS build
 
-#  This template allows you to test and build your Java project with Maven.
-#  The workflow allows running tests, code checkstyle and security scans on the default branch.
+#  This template allows you to validate your NodeJS code.
+#  The workflow allows running tests and code linting on the default branch.
+# Use the official Node.js image to run the build
+image: node:14.16.0
 
-# Prerequisites: pom.xml and appropriate project structure should exist in the repository.
+ 
 
-image: maven:3.6.3
-
+# Define your pipeline steps
 pipelines:
-  default:
-    - parallel:
-      - step:
-          name: Build and Test
-          caches:
-            - maven
-          script:
-            - mvn -B verify --file pom.xml
-          after-script:
-              # Collect checkstyle results, if any, and convert to Bitbucket Code Insights.
-            - pipe: atlassian/checkstyle-report:0.3.0
-      - step:
-          name: Security Scan
-          script:
-            # Run a security scan for sensitive data.
-            # See more security tools at https://bitbucket.org/product/features/pipelines/integrations?&category=security
-            - pipe: atlassian/git-secrets-scan:0.5.1
+  default:
+    - step:
+        name: Install Dependencies
+        caches:
+          - node
+        script:
+          # Install dependencies
+          - npm install
+
+ 
+
+    - step:
+        name: Build and Test
+        caches:
+          - node
+        script:
+          # Build and test the application
+          - npm run build
+          - npm run test
