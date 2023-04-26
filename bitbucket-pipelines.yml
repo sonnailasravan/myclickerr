@@ -2,29 +2,23 @@
 
 #  This template allows you to validate your NodeJS code.
 #  The workflow allows running tests and code linting on the default branch.
-# Use the official Node.js image to run the build
-image: node:14.16.0
 
- 
+image: node:16
 
-# Define your pipeline steps
 pipelines:
-  default:
-    - step:
-        name: Install Dependencies
-        caches:
-          - node
-        script:
-          # Install dependencies
-          - npm install
-
- 
-
-    - step:
-        name: Build and Test
-        caches:
-          - node
-        script:
-          # Build and test the application
-          - npm run build
-          - npm run test
+  default:
+    - parallel:
+        - step:
+            name: Build and Test
+            caches:
+              - node
+            script:
+              - npm install
+              - npm test
+        - step:
+            name: Code linting
+            script:
+              - npm install eslint
+              - npx eslint .
+            caches:
+              - node
