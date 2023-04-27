@@ -5,6 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const Header = () => {
@@ -30,7 +31,7 @@ const Header = () => {
             <Nav.Link >FAQ`s</Nav.Link>
             <Nav.Link >Popular Photographers</Nav.Link>
             <Nav.Link >Contact us</Nav.Link>
-            <Nav.Link><Button className="SignupButton" >Login / Signup</Button> </Nav.Link>          
+            <Nav.Link href="/Login"><Button className="SignupButton" >Login / Signup</Button></Nav.Link>    
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,15 +1,18 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image,Carousel } from "react-bootstrap";
+import Footer from "../Footer/Footer";
 
 const Homepage = () => {
   return (
     <Container fluid className="landingpage">
       <Row className="Bodytext">
         <Col xs={12} md={6}>
-          <h2 class="animate__animated animate__fadeIn">Capture your precious memories with pros</h2>
+          <h2 class="animate__animated animate__fadeIn">
+            Capture your precious memories with pros
+          </h2>
           <p>
             Are you looking for a professional photographer for your upcoming
-            event, but don’t know where to start? We’re here
+            event, but don’t know where to start? We’re here.
           </p>
           <button className="Booking-Button">Book a photographer</button>
         </Col>
@@ -170,15 +173,204 @@ const Homepage = () => {
           View all photographers
         </button>
       </Container>
+      {/* Our Process */}
       <container fluid>
-        <Row>
-            <Col>
-            <div>
-                
-            </div>
-            </Col>
+        <Row className="process">
+          <Col xs={12} md={6}>
+            <Image
+              src="/images/Ourprocess/celebrity-photoshoot-by-male-photographer@2x.png"
+              alt="Image"
+              style={{ maxWidth: "100%" }}
+            />
+          </Col>
+          <Col xs={12} md={6}>
+            <h2>Our process</h2>
+            <Row className="processSteps">
+              <div>
+                <Col xs={2}>
+                  <Image
+                    src="/images/Ourprocess/Rectangle 2933@2x.png"
+                    alt="Logo"
+                    className="processImage"
+                  />
+                </Col>
+                <Col xs={10}>
+                  <p>Choose a photographer</p>
+                  <h6>Quisque suscipit ipsum est, eu venenatis leo.</h6>
+                </Col>
+              </div>
+              <div>
+                <Col xs={2}>
+                  <Image
+                    src="/images/Ourprocess/Rectangle 2933@2x.png"
+                    alt="Logo"
+                    className="processImage"
+                  />
+                </Col>
+                <Col xs={10}>
+                  <p>Add event details</p>
+                  <h6>Quisque suscipit ipsum est, eu venenatis leo.</h6>
+                </Col>
+              </div>
+              <div>
+                <Col xs={2}>
+                  <Image
+                    src="/images/Ourprocess/Rectangle 2933@2x.png"
+                    alt="Logo"
+                    className="processImage"
+                  />
+                </Col>
+                <Col xs={10}>
+                  <p>Wait for photographer’s approval</p>
+                  <h6>Quisque suscipit ipsum est, eu venenatis leo.</h6>
+                </Col>
+              </div>
+              <div>
+                <Col xs={2}>
+                  <Image
+                    src="/images/Ourprocess/Rectangle 2933@2x.png"
+                    alt="Logo"
+                    className="processImage"
+                  />
+                </Col>
+                <Col xs={10}>
+                  <p>That’s it. You’re booking is confirmed</p>
+                  <h6>Quisque suscipit ipsum est, eu venenatis leo.</h6>
+                </Col>
+              </div>
+            </Row>
+          </Col>
         </Row>
       </container>
+{/* Our Popular Photographers */}
+      <div class="container-fluid">
+        <h2 class="text-center">Our Photographers Gallery</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <Image src="/images/Ourprocess/Rectangle 2937@2x.png" alt="image1" layout="responsive" width={290} height={200}/>
+          </div>
+          <div class="col-md-3">
+            <Image src="/images/Ourprocess/Rectangle 2938@2x.png" alt="image1" layout="responsive" width={290} height={200} />
+          </div>
+          <div class="col-md-3">
+            <Image src="/images/Ourprocess/Rectangle 2939@2x.png" alt="image1" layout="responsive" width={290} height={200} />
+          </div>
+          <div class="col-md-3">
+            <Image src="/images/Ourprocess/Rectangle 2941@2x.png" alt="image1" layout="responsive" width={290} height={200}  />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <Image src="/images/Ourprocess/Rectangle 2942@2x.png" alt="image1" layout="responsive" width={290} height={200} />
+          </div>
+          <div class="col-md-3">
+            <Image src="/images/Ourprocess/Rectangle 2943@2x.png" alt="image1" layout="responsive" width={290} height={200} />
+          </div>
+          <div class="col-md-3">
+            <Image src="/images/Ourprocess/Rectangle 2944@2x.png" alt="image1" layout="responsive" width={290} height={200} />
+          </div>
+          <div class="col-md-3">
+            <Image src="/images/Ourprocess/Rectangle 2945@2x.png" alt="image1" layout="responsive" width={290} height={200} />
+          </div>
+        </div>
+      </div>
+      <Container fluid>
+      <h2 className="text-center">We can handle any event</h2>
+      <Row>
+        <Col md={3} className="position-relative">
+          <Image src="/images/Ourprocess/Rectangle 2938@2x.png" alt="Image 1" className="w-100" />
+          <h3 className="ImageContainer">
+          Wedding Photography
+          </h3>
+        </Col>
+        <Col md={3} className="position-relative">
+          <Image src="/images/Ourprocess/Rectangle 2938@2x.png" alt="Image 2" className="w-100" />
+          <h3 className="ImageContainer">
+          Portrait Photography
+          </h3>
+        </Col>
+        <Col md={3} className="position-relative">
+          <Image src="/images/Ourprocess/Rectangle 2938@2x.png" alt="Image 3" className="w-100" />
+          <h3 className="ImageContainer">
+          Wildlife Photography
+          </h3>
+        </Col>
+        <Col md={3} className="position-relative">
+          <Image src="/images/Ourprocess/Rectangle 2938@2x.png" alt="Image 4" className="w-100" />
+          <h3 className="ImageContainer">
+          Documentary Photography
+          </h3>
+        </Col>
+      </Row>
+    </Container>
+
+    {/* Testimonals */}
+
+    <Carousel fade >
+      <Carousel.Item className="Carosel-Container">
+        <Image
+          className="d-block w-100 "
+          src="/images/Ourprocess/Rectangle 2943@2x.png"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item className="Carosel-Container">
+        <Image
+          className="d-block w-100"
+          src="/images/Ourprocess/Rectangle 2943@2x.png"
+          alt="Second slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item className="Carosel-Container">
+        <Image
+          className="d-block w-100"
+          src="/images/Ourprocess/Rectangle 2943@2x.png"
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+    {/* Download */}
+  <Container fluid>
+  <Row className="Bodytext">
+        <Col xs={12} md={6}>
+          <Image
+            src="/images/Ourprocess/Mobile2.png"
+            alt="Image"
+            style={{ maxWidth: "50%",marginTop:"170px",gap:"10px"}}
+          />
+          <Image
+            src="/images/Ourprocess/Mobile1.png"
+            alt="Image"
+            style={{ maxWidth: "50%" }}
+          />
+        </Col>
+        <Col xs={12} md={6}>
+          <h2 class="animate__animated animate__fadeIn">
+          Download MyClicker Mobile app
+          </h2>
+          <p>
+          Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero.
+          </p>
+        </Col>
+      </Row>
+  </Container>
+  <Footer/>
     </Container>
   );
 };
