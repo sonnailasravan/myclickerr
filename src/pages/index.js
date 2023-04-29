@@ -1,14 +1,12 @@
 import React from 'react'
-import NavBar from "../../Components/NavBar/Navbar"
-import Terms from '../../Components/Terms and Conditions/Terms';
 import Homepage from '../../Components/Homepage/Homepage';
+import Header from '../../Components/NavBar/Header';
 
 const index = () => {
   return (
     <div>
-      <NavBar/>
+      <Header/>
       <Homepage/>
-      {/* *<Terms/> */}
     </div>
     
   )

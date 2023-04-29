@@ -1,13 +1,16 @@
 import React from "react";
 import { Container, Row, Col, Image,Carousel } from "react-bootstrap";
 import Footer from "../Footer/Footer";
+import Link from "next/link";
+import Lottie from "react-lottie";
+import animationData from "../.././public/./Images/./Ourprocess/./movie-maker-making-movie (1).json";
 
 const Homepage = () => {
   return (
     <Container fluid className="landingpage">
       <Row className="Bodytext">
         <Col xs={12} md={6}>
-          <h2 class="animate__animated animate__fadeIn">
+          <h2 className="animate__animated animate__fadeIn">
             Capture your precious memories with pros
           </h2>
           <p>
@@ -17,10 +20,22 @@ const Homepage = () => {
           <button className="Booking-Button">Book a photographer</button>
         </Col>
         <Col xs={12} md={6}>
-          <Image
+          {/* <Image
             src="/images/Mask Group 1@2x.png"
             alt="Image"
             style={{ maxWidth: "100%" }}
+          /> */}
+           <Lottie 
+          options={{
+            loop: true,
+            autoplay: true,
+            animationData: animationData,
+            rendererSettings: {
+              preserveAspectRatio: "xMidYMid slice",
+            },
+            speed:3,
+          }}
+          // style={{ maxWidth: "100%" }}
           />
         </Col>
       </Row>
@@ -78,7 +93,9 @@ const Homepage = () => {
                 </Row>
                 <Row>
                   <Col>
+                  <Link href="/photographerDetails">
                     <button className="details-btn">view Details</button>
+                    </Link>
                   </Col>
                   <Col>
                     <button className="book-btn ">Book Now</button>
@@ -159,7 +176,7 @@ const Homepage = () => {
                 </Row>
                 <Row>
                   <Col>
-                    <button className="details-btn">view Details</button>
+                  <button className="details-btn">view Details</button>
                   </Col>
                   <Col>
                     <button className="book-btn ">Book Now</button>
@@ -243,33 +260,33 @@ const Homepage = () => {
         </Row>
       </container>
 {/* Our Popular Photographers */}
-      <div class="container-fluid">
-        <h2 class="text-center">Our Photographers Gallery</h2>
-        <div class="row">
-          <div class="col-md-3">
+      <div className="container-fluid">
+        <h2 className="text-center">Our Photographers Gallery</h2>
+        <div className="row">
+          <div className="col-md-3">
             <Image src="/images/Ourprocess/Rectangle 2937@2x.png" alt="image1" layout="responsive" width={290} height={200}/>
           </div>
-          <div class="col-md-3">
+          <div className="col-md-3">
             <Image src="/images/Ourprocess/Rectangle 2938@2x.png" alt="image1" layout="responsive" width={290} height={200} />
           </div>
-          <div class="col-md-3">
+          <div className="col-md-3">
             <Image src="/images/Ourprocess/Rectangle 2939@2x.png" alt="image1" layout="responsive" width={290} height={200} />
           </div>
-          <div class="col-md-3">
+          <div className="col-md-3">
             <Image src="/images/Ourprocess/Rectangle 2941@2x.png" alt="image1" layout="responsive" width={290} height={200}  />
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-3">
+        <div className="row">
+          <div className="col-md-3">
             <Image src="/images/Ourprocess/Rectangle 2942@2x.png" alt="image1" layout="responsive" width={290} height={200} />
           </div>
-          <div class="col-md-3">
+          <div className="col-md-3">
             <Image src="/images/Ourprocess/Rectangle 2943@2x.png" alt="image1" layout="responsive" width={290} height={200} />
           </div>
-          <div class="col-md-3">
+          <div className="col-md-3">
             <Image src="/images/Ourprocess/Rectangle 2944@2x.png" alt="image1" layout="responsive" width={290} height={200} />
           </div>
-          <div class="col-md-3">
+          <div className="col-md-3">
             <Image src="/images/Ourprocess/Rectangle 2945@2x.png" alt="image1" layout="responsive" width={290} height={200} />
           </div>
         </div>
@@ -361,7 +378,7 @@ const Homepage = () => {
           />
         </Col>
         <Col xs={12} md={6}>
-          <h2 class="animate__animated animate__fadeIn">
+          <h2 className="animate__animated animate__fadeIn">
           Download MyClicker Mobile app
           </h2>
           <p>

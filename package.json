@@ -10,13 +10,16 @@
     "test": "jest"
   },
   "dependencies": {
+    "@lottiefiles/lottie-player": "^1.7.1",
     "bootstrap": "^5.2.3",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "lottie-web": "^5.11.0",
     "next": "13.3.0",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.4",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-lottie": "^1.2.3"
   },
   "devDependencies": {
     "jest": "^29.5.0"
