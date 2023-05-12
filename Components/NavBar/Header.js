@@ -28,6 +28,7 @@ const Header = () => {
           className="justify-content-end"
         >
           <Nav className="Navtabs">
+          <Nav.Link href='/'>Home</Nav.Link>
             <Nav.Link>About Us</Nav.Link>
             <Nav.Link>FAQ`s</Nav.Link>
             <Nav.Link>Popular Photographers</Nav.Link>

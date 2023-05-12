@@ -31,7 +31,7 @@ const Footer = () => {
         </Row>
         <hr />
         <p className="text-center">
-          &copy; {new Date().getFullYear()} My Company. All Rights Reserved.
+          &copy; {new Date().getFullYear()} My Clicker. All Rights Reserved.
         </p>
       </Container>
     </footer>

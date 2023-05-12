@@ -1,72 +1,105 @@
-import React from "react";
-import { Container, Row, Col, Image,Carousel } from "react-bootstrap";
+import React, { useRef, useEffect,useState } from "react";
+import { Container, Row, Col, Image, Carousel } from "react-bootstrap";
 import Footer from "../Footer/Footer";
 import Link from "next/link";
-import Lottie from "react-lottie";
+import lottie from "lottie-web";
 import animationData from "../.././public/./Images/./Ourprocess/./movie-maker-making-movie (1).json";
 
 const Homepage = () => {
+  const container = useRef(null);
+  const [count1, setCount1] = useState(0);
+  const [count2, setCount2] = useState(0);
+  const [count3, setCount3] = useState(0);
+  useEffect(() => {
+    const anim = lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: animationData,
+    });
+    return () => anim.destroy();
+  }, []);
+  useEffect(() => {
+    let interval1 = null;
+    let interval2 = null;
+    let interval3 = null;
+
+    if (count1 < 500) {
+      interval1 = setInterval(() => {
+        setCount1((prevCount) => prevCount + 1);
+      }, 0);
+    }
+
+    if (count2 < 4.9) {
+      interval2 = setInterval(() => {
+        setCount2((prevCount) => prevCount + 0.1);
+      }, 10);
+    }
+
+    if (count3 < 100) {
+      interval3 = setInterval(() => {
+        setCount3((prevCount) => prevCount + 1);
+      }, 10);
+    }
+
+    return () => {
+      clearInterval(interval1);
+      clearInterval(interval2);
+      clearInterval(interval3);
+    };
+  }, [count1, count2, count3]);
   return (
-    <Container fluid className="landingpage">
+    <Container
+      className="landingpage"
+      data-aos="fade-bottom"
+      data-aos-offset="2"
+      data-aos-delay="1"
+      data-aos-duration="5"
+      data-aos-easing="ease-in-out"
+      data-aos-once="true"
+    >
       <Row className="Bodytext">
-        <Col xs={12} md={6}>
+        <Col>
           <h2 className="animate__animated animate__fadeIn">
             Capture your precious memories with pros
           </h2>
           <p>
             Are you looking for a professional photographer for your upcoming
-            event, but don’t know where to start? We’re here.
+            event, but don’t know <b>where to start ? We’re here.</b>
           </p>
           <button className="Booking-Button">Book a photographer</button>
         </Col>
-        <Col xs={12} md={6}>
-          {/* <Image
-            src="/images/Mask Group 1@2x.png"
-            alt="Image"
-            style={{ maxWidth: "100%" }}
-          /> */}
-           <Lottie 
-          options={{
-            loop: true,
-            autoplay: true,
-            animationData: animationData,
-            rendererSettings: {
-              preserveAspectRatio: "xMidYMid slice",
-            },
-            speed:3,
-          }}
-          // style={{ maxWidth: "100%" }}
-          />
+        <Col>
+          <div ref={container} style={{ width: "100%", height: "auto" }} />
         </Col>
       </Row>
 
-      <Row className="summaryBlock">
-        <Col xs={12} md={3}>
-          <div>
-            <h1>What do we provide</h1>
-          </div>
-        </Col>
-        <Col xs={6} md={3}>
-          <div>
-            <h1>500+</h1>
-            <h6>Professional Photographers</h6>
-          </div>
-        </Col>
-        <Col xs={6} md={3}>
-          <div>
-            <h1>4.9</h1>
-            <h6>Rated Photographers</h6>
-          </div>
-        </Col>
-        <Col xs={12} md={3}>
-          <div>
-            <h1>100%</h1>
-            <h6>Customer Satisfaction</h6>
-          </div>
-        </Col>
+      {/* Summary */}
+      <Row className="summaryBlock" data-aos="zoom-in-right,flip-right">
+        <div data-aos="zoom-in-up">
+          <h4>What do we provide</h4>
+        </div>
+
+        <div data-aos="zoom-in-up">
+          {/* <h3>500&nbsp;+</h3> */}
+          <h3>{count1}</h3>
+
+          <label>Professional Photographers</label>
+        </div>
+
+        <div data-aos="zoom-in-up">
+        <h3>{count2.toFixed(1)}</h3>
+          <label>Rated Photographers</label>
+        </div>
+
+        <div data-aos="zoom-in-up">
+        <h3>{count3}%</h3>
+          <label>Customer Satisfaction</label>
+        </div>
       </Row>
       {/* Photographers Display */}
-      <Container fluid>
+      <Container>
         <Row className="photographersDisplay">
           <Col>
             <div>
@@ -93,12 +126,14 @@ const Homepage = () => {
                 </Row>
                 <Row>
                   <Col>
-                  <Link href="/photographerDetails">
-                    <button className="details-btn">view Details</button>
+                    <Link href="/Photographer">
+                      <button className="details-btn">view Details</button>
                     </Link>
                   </Col>
                   <Col>
-                    <button className="book-btn ">Book Now</button>
+                    <Link href="NewBooking">
+                      <button className="book-btn ">Book Now</button>
+                    </Link>
                   </Col>
                 </Row>
               </div>
@@ -176,7 +211,7 @@ const Homepage = () => {
                 </Row>
                 <Row>
                   <Col>
-                  <button className="details-btn">view Details</button>
+                    <button className="details-btn">view Details</button>
                   </Col>
                   <Col>
                     <button className="book-btn ">Book Now</button>
@@ -191,7 +226,7 @@ const Homepage = () => {
         </button>
       </Container>
       {/* Our Process */}
-      <container fluid>
+      <container>
         <Row className="process">
           <Col xs={12} md={6}>
             <Image
@@ -205,11 +240,13 @@ const Homepage = () => {
             <Row className="processSteps">
               <div>
                 <Col xs={2}>
-                  <Image
-                    src="/images/Ourprocess/Rectangle 2933@2x.png"
-                    alt="Logo"
-                    className="processImage"
-                  />
+                  <div className="backgroundAdjust">
+                    <Image
+                      src="/images/Ourprocess/person.png"
+                      alt="Logo"
+                      className="processImage"
+                    />
+                  </div>
                 </Col>
                 <Col xs={10}>
                   <p>Choose a photographer</p>
@@ -218,11 +255,13 @@ const Homepage = () => {
               </div>
               <div>
                 <Col xs={2}>
-                  <Image
-                    src="/images/Ourprocess/Rectangle 2933@2x.png"
-                    alt="Logo"
-                    className="processImage"
-                  />
+                  <div className="backgroundAdjust">
+                    <Image
+                      src="/images/Ourprocess/calendar.png"
+                      alt="Logo"
+                      className="processImage"
+                    />
+                  </div>
                 </Col>
                 <Col xs={10}>
                   <p>Add event details</p>
@@ -231,11 +270,13 @@ const Homepage = () => {
               </div>
               <div>
                 <Col xs={2}>
-                  <Image
-                    src="/images/Ourprocess/Rectangle 2933@2x.png"
-                    alt="Logo"
-                    className="processImage"
-                  />
+                  <div className="backgroundAdjust">
+                    <Image
+                      src="/images/Ourprocess/right.png"
+                      alt="Logo"
+                      className="processImage"
+                    />
+                  </div>
                 </Col>
                 <Col xs={10}>
                   <p>Wait for photographer’s approval</p>
@@ -244,11 +285,13 @@ const Homepage = () => {
               </div>
               <div>
                 <Col xs={2}>
-                  <Image
-                    src="/images/Ourprocess/Rectangle 2933@2x.png"
-                    alt="Logo"
-                    className="processImage"
-                  />
+                  <div className="backgroundAdjust">
+                    <Image
+                      src="/images/Ourprocess/okay.png"
+                      alt="Logo"
+                      className="processImage"
+                    />
+                  </div>
                 </Col>
                 <Col xs={10}>
                   <p>That’s it. You’re booking is confirmed</p>
@@ -259,135 +302,201 @@ const Homepage = () => {
           </Col>
         </Row>
       </container>
-{/* Our Popular Photographers */}
-      <div className="container-fluid">
+      {/* Our Popular Photographers */}
+      <div className="ourPhotographers">
         <h2 className="text-center">Our Photographers Gallery</h2>
-        <div className="row">
-          <div className="col-md-3">
-            <Image src="/images/Ourprocess/Rectangle 2937@2x.png" alt="image1" layout="responsive" width={290} height={200}/>
+        <div className="popularPhotographers">
+          <div>
+            <Image
+              src="/images/Ourprocess/Rectangle 2937@2x.png"
+              alt="image1"
+              layout="responsive"
+              width={260}
+              height={200}
+            />
           </div>
-          <div className="col-md-3">
-            <Image src="/images/Ourprocess/Rectangle 2938@2x.png" alt="image1" layout="responsive" width={290} height={200} />
+          <div>
+            <Image
+              src="/images/Ourprocess/Rectangle 2938@2x.png"
+              alt="image1"
+              layout="responsive"
+              width={260}
+              height={200}
+            />
           </div>
-          <div className="col-md-3">
-            <Image src="/images/Ourprocess/Rectangle 2939@2x.png" alt="image1" layout="responsive" width={290} height={200} />
+          <div>
+            <Image
+              src="/images/Ourprocess/Rectangle 2939@2x.png"
+              alt="image1"
+              layout="responsive"
+              width={260}
+              height={200}
+            />
           </div>
-          <div className="col-md-3">
-            <Image src="/images/Ourprocess/Rectangle 2941@2x.png" alt="image1" layout="responsive" width={290} height={200}  />
+          <div>
+            <Image
+              src="/images/Ourprocess/Rectangle 2941@2x.png"
+              alt="image1"
+              layout="responsive"
+              width={260}
+              height={200}
+              style={{ maxWidth: "100%" }}
+            />
           </div>
-        </div>
-        <div className="row">
-          <div className="col-md-3">
-            <Image src="/images/Ourprocess/Rectangle 2942@2x.png" alt="image1" layout="responsive" width={290} height={200} />
+          {/* <div className="row"> */}
+          <div>
+            <Image
+              src="/images/Ourprocess/Rectangle 2942@2x.png"
+              alt="image1"
+              layout="responsive"
+              width={260}
+              height={200}
+            />
           </div>
-          <div className="col-md-3">
-            <Image src="/images/Ourprocess/Rectangle 2943@2x.png" alt="image1" layout="responsive" width={290} height={200} />
+          <div>
+            <Image
+              src="/images/Ourprocess/Rectangle 2943@2x.png"
+              alt="image1"
+              layout="responsive"
+              width={260}
+              height={200}
+            />
           </div>
-          <div className="col-md-3">
-            <Image src="/images/Ourprocess/Rectangle 2944@2x.png" alt="image1" layout="responsive" width={290} height={200} />
+          <div>
+            <Image
+              src="/images/Ourprocess/Rectangle 2944@2x.png"
+              alt="image1"
+              layout="responsive"
+              width={260}
+              height={200}
+            />
           </div>
-          <div className="col-md-3">
-            <Image src="/images/Ourprocess/Rectangle 2945@2x.png" alt="image1" layout="responsive" width={290} height={200} />
+          <div>
+            <Image
+              src="/images/Ourprocess/Rectangle 2945@2x.png"
+              alt="image1"
+              layout="responsive"
+              width={260}
+              height={200}
+            />
           </div>
         </div>
       </div>
-      <Container fluid>
-      <h2 className="text-center">We can handle any event</h2>
-      <Row>
-        <Col md={3} className="position-relative">
-          <Image src="/images/Ourprocess/Rectangle 2938@2x.png" alt="Image 1" className="w-100" />
-          <h3 className="ImageContainer">
-          Wedding Photography
-          </h3>
-        </Col>
-        <Col md={3} className="position-relative">
-          <Image src="/images/Ourprocess/Rectangle 2938@2x.png" alt="Image 2" className="w-100" />
-          <h3 className="ImageContainer">
-          Portrait Photography
-          </h3>
-        </Col>
-        <Col md={3} className="position-relative">
-          <Image src="/images/Ourprocess/Rectangle 2938@2x.png" alt="Image 3" className="w-100" />
-          <h3 className="ImageContainer">
-          Wildlife Photography
-          </h3>
-        </Col>
-        <Col md={3} className="position-relative">
-          <Image src="/images/Ourprocess/Rectangle 2938@2x.png" alt="Image 4" className="w-100" />
-          <h3 className="ImageContainer">
-          Documentary Photography
-          </h3>
-        </Col>
-      </Row>
-    </Container>
 
-    {/* Testimonals */}
+      {/* </div> */}
+      <Container>
+        <div className="eventsHandling">
+          <h2 className="text-center">We can handle any event</h2>
+        </div>
+        <Row>
+          <Col md={3} className="position-relative">
+            <Image
+              src="/images/Ourprocess/Rectangle 2938@2x.png"
+              alt="Image 1"
+              className="w-100"
+            />
+            <h3 className="ImageContainer">Wedding Photography</h3>
+          </Col>
+          <Col md={3} className="position-relative">
+            <Image
+              src="/images/Ourprocess/Rectangle 2938@2x.png"
+              alt="Image 2"
+              className="w-100"
+            />
+            <h3 className="ImageContainer">Portrait Photography</h3>
+          </Col>
+          <Col md={3} className="position-relative">
+            <Image
+              src="/images/Ourprocess/Rectangle 2938@2x.png"
+              alt="Image 3"
+              className="w-100"
+            />
+            <h3 className="ImageContainer">Wildlife Photography</h3>
+          </Col>
+          <Col md={3} className="position-relative">
+            <Image
+              src="/images/Ourprocess/Rectangle 2938@2x.png"
+              alt="Image 4"
+              className="w-100"
+            />
+            <h3 className="ImageContainer">Documentary Photography</h3>
+          </Col>
+        </Row>
+      </Container>
 
-    <Carousel fade >
-      <Carousel.Item className="Carosel-Container">
-        <Image
-          className="d-block w-100 "
-          src="/images/Ourprocess/Rectangle 2943@2x.png"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item className="Carosel-Container">
-        <Image
-          className="d-block w-100"
-          src="/images/Ourprocess/Rectangle 2943@2x.png"
-          alt="Second slide"
-        />
+      {/* Testimonals */}
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item className="Carosel-Container">
-        <Image
-          className="d-block w-100"
-          src="/images/Ourprocess/Rectangle 2943@2x.png"
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-    {/* Download */}
-  <Container fluid>
-  <Row className="Bodytext">
-        <Col xs={12} md={6}>
+      <Carousel fade>
+        <Carousel.Item className="Carosel-Container">
           <Image
-            src="/images/Ourprocess/Mobile2.png"
-            alt="Image"
-            style={{ maxWidth: "50%",marginTop:"170px",gap:"10px"}}
+            className="d-block w-100 "
+            src="/images/Ourprocess/Rectangle 2943@2x.png"
+            alt="First slide"
           />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item className="Carosel-Container">
           <Image
-            src="/images/Ourprocess/Mobile1.png"
-            alt="Image"
-            style={{ maxWidth: "50%" }}
+            className="d-block w-100"
+            src="/images/Ourprocess/Rectangle 2943@2x.png"
+            alt="Second slide"
           />
-        </Col>
-        <Col xs={12} md={6}>
-          <h2 className="animate__animated animate__fadeIn">
-          Download MyClicker Mobile app
-          </h2>
-          <p>
-          Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero.
-          </p>
-        </Col>
-      </Row>
-  </Container>
-  <Footer/>
+
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item className="Carosel-Container">
+          <Image
+            className="d-block w-100"
+            src="/images/Ourprocess/Rectangle 2943@2x.png"
+            alt="Third slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+      {/* Download */}
+      <Container>
+        <Row className="Bodytext">
+          <div className="mobilescreeens">
+            {/* <Col xs={12} md={6}> */}
+            <Image
+              src="/images/Ourprocess/Mobile2.png"
+              alt="Image"
+              style={{ maxWidth: "90%", marginTop: "170px", gap: "10px" }}
+            />
+            <Image
+              src="/images/Ourprocess/Mobile1.png"
+              alt="Image"
+              style={{ maxWidth: "90%" }}
+            />
+            {/* </Col> */}
+          </div>
+          <div>
+            {/* <Col xs={12} md={6}> */}
+            <h2 className="animate__animated animate__fadeIn">
+              Download MyClicker Mobile app
+            </h2>
+            <p>
+              Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim
+              neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet
+              nibh. Curabitur auctor leo et libero.
+            </p>
+            {/* </Col> */}
+          </div>
+        </Row>
+      </Container>
+      <Footer />
     </Container>
   );
 };
