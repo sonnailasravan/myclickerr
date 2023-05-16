@@ -118,7 +118,7 @@ const NewBooking = () => {
                     type="time"
                     placeholder="Start Time"
                     onChange={(e) => setStartTime(e.target.value)}
-                    className={styles.input}
+                    className={styles.inputFields}
                   />
 
                   {/* <TimePicker
@@ -153,17 +153,9 @@ const NewBooking = () => {
                     type="time"
                     placeholder="End Time"
                     onChange={(e) => setEndTime(e.target.value)}
-                    className={styles.input}
+                    // className={styles.input}
                   />
-                  {/* <TimePicker
-              value={endTime}
-              onChange={(time) => setEndTime(time)}
-            //   className={styles.timepicker}
-            //   clockClassName={styles.clock}
-              clearIcon={null}
-              showIcon={false}
-              showMeridian={true}
-            /> */}
+                  
                 </Form.Group>
               </Col>
               <Col>
@@ -173,7 +165,7 @@ const NewBooking = () => {
                     type="time"
                     placeholder="Total Time"
                     value={calculateDuration()}
-                    className={styles.input}
+                    // className={styles.input}
                     disabled
                   />
                 </Form.Group>
@@ -187,7 +179,7 @@ const NewBooking = () => {
                     type="text"
                     placeholder="Event Title"
                     onChange={(e) => setEventTitle(e.target.value)}
-                    className={styles.input}
+                    // className={styles.input}
                   />
                 </Form.Group>
               </Col>
@@ -229,7 +221,7 @@ const NewBooking = () => {
                     as="textarea"
                     placeholder="Event Description"
                     onChange={(e) => setEventDescription(e.target.value)}
-                    className={styles.textarea}
+                    // className={styles.textarea}
                   />
                 </Form.Group>
               </Col>

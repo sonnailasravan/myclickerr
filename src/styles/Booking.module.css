@@ -1,5 +1,10 @@
 /* @import "bootstrap/dist/css/bootstrap.css"; */
-
+@font-face {
+  font-family: "AlbertSans";
+  src: url('../fonts/AlbertSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 /* .datepicker, .timepicker, .input {
     display: block;
     width: 320px;
@@ -259,6 +264,12 @@
 }
 .couponDetails{
   margin: 20px 0px;
+  
+}
+.couponandAddress{
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .couponDetails > h2 {
   font-family: Albert Sans;
@@ -301,4 +312,29 @@
   .CardContainer {
     width: auto;
   }
+}
+
+/* .inputFields{
+  border-color: #b96c34 !important;
+} */
+.inputFields:focus{
+  border-color: #b96c34 !important;
+}
+
+.popularPhotographers >h1{
+  display: flex;
+  align-items: center;
+  /* border: 2px solid black; */
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 74px;
+  font-family: Albert Sans;
+  font-weight: bold;
+  opacity: 1;
+}
+.popularPhotographers > input{
+ border: 2px solid black ;
+ display: flex ;
+ justify-content: center ;
+ align-items:center ;
 }

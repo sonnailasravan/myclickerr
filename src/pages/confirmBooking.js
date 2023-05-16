@@ -6,9 +6,16 @@ import { Card } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
 import axios from "axios";
+import RescheduleBooking from "./Reschedule Booking";
+import CancelBooking from "./CancelBooking";
 
 const ProceedBooking = () => {
   const [eventData, setEventData] = useState([]);
+  const [showModal, setShowModal] = useState(false);
+  const closeModal = () => setShowModal(false);
+
+  const [showcancel, setShowcancel] = useState(false);
+  const closecancel = () => setShowcancel(false);
 
   useEffect(() => {
     const fetchEventData = async () => {
@@ -177,9 +184,11 @@ const ProceedBooking = () => {
       </Container>
       {/* Coupons */}
 
-      <Container className={styles.couponDetails}>
+      <Container className={styles.couponDetails} >
         <h2>Coupons</h2>
-        <Card className="shadow" style={{ width: "40%", margin: "0" }}>
+        <div className={styles.couponandAddress} >
+
+        <Card className="shadow" style={{ width: "40%", margin: "0", }}>
           <Card.Body className={styles.CouponCardDetails}>
             <Row className="justify-content-between">
               <Col className="align-items-center">
@@ -191,10 +200,23 @@ const ProceedBooking = () => {
             </Row>
           </Card.Body>
         </Card>
+        <Card className="shadow" style={{ width: "40%", margin: "0" }}>
+          <Card.Body className={styles.CouponCardDetails}>
+            <Row className="justify-content-between">
+              <Col className="align-items-center">
+                <label>Add Location</label>
+              </Col>
+              <Col className=" d-flex align-items-center justify-content-end mb-3">
+                &gt;
+              </Col>
+            </Row>
+          </Card.Body>
+        </Card>
+        </div>
       </Container>
 
       {/* Final Price */}
-      <Container className={styles.couponDetails}>
+      <Container className={styles.priceDetails}>
         <h2>Final Price</h2>
         <Card className={` ${styles.CardContainer} shadow`}>
           <Card.Body className={styles.FinalCardDetails}>
@@ -225,9 +247,25 @@ const ProceedBooking = () => {
           </Card.Body>
         </Card>
       </Container>
-      <Link href="/selectLocation">
-        <button className="OTP-Button mt-4 mx-3">Select Location</button>
-      </Link>
+
+      <button
+        type="submit"
+        className="btn selectbtn1"
+        onClick={() => setShowModal(true)}
+        style={{ borderRadius: "30px", color: "white" }}
+      >
+        Reschedule Booking
+      </button>
+      {showModal && <RescheduleBooking closeModal={closeModal} />}
+      <button
+        type="submit"
+        className="btn selectbtn1"
+        onClick={() => setShowcancel(true)}
+        style={{ borderRadius: "30px", color: "white" }}
+      >
+        Cancel booking
+      </button>
+      {showcancel && <CancelBooking closecancel={closecancel} />}
     </Container>
   );
 };

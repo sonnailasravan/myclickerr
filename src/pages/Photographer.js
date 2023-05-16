@@ -41,13 +41,16 @@ const photographer = () => {
         
           </div> 
      <div className="buttonbook">
-          <button
+      <Link href='/NewBooking'>
+      <button
         type="button"
         className="btn"
         style={{ width: "200px", backgroundColor: "#8E2ADB", color:"white" }}
       >
         Book Now
       </button>
+      </Link>
+          
           </div>
         
           </div>

@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
  import RescheduleBooking from "./Reschedule Booking";
  import Image from "next/image";
 import CancelBooking from "./CancelBooking";
+import Link from "next/link";
 function Selectloction(){
     const [showModal, setShowModal] = useState(false);
     const closeModal =()=> setShowModal(false)
@@ -77,11 +78,14 @@ return(
     </Col>
   </Row>
   </Container>
+  <Link href="/confirmBooking">
+  <button type="submit"  className="btn selectbtn1"  style={{borderRadius:"30px",color:"white"}}>Add Location</button>
+  </Link>
   
-  <button type="submit"  className="btn selectbtn1" onClick={()=> setShowModal(true)} style={{borderRadius:"30px",color:"white"}}>Add Location</button>
+  {/* <button type="submit"  className="btn selectbtn1" onClick={()=> setShowModal(true)} style={{borderRadius:"30px",color:"white"}}>Add Location</button>
   {showModal && < RescheduleBooking closeModal={closeModal}/>}
   <button type="submit"  className="btn selectbtn1" onClick={()=> setShowcancel(true)} style={{borderRadius:"30px",color:"white"}}>Cancel booking</button>
-  {showcancel && < CancelBooking closecancel={closecancel}/>}
+  {showcancel && < CancelBooking closecancel={closecancel}/>} */}
     </Container>
     </div>
 )

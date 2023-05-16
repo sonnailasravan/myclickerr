@@ -27,11 +27,11 @@ const Homepage = () => {
 
     if (count1 < 500) {
       interval1 = setInterval(() => {
-        setCount1((prevCount) => prevCount + 1);
-      }, 0);
+        setCount1((prevCount) => prevCount + 10);
+      }, 10);
     }
 
-    if (count2 < 4.9) {
+    if (count2 < 4.8) {
       interval2 = setInterval(() => {
         setCount2((prevCount) => prevCount + 0.1);
       }, 10);
@@ -83,7 +83,7 @@ const Homepage = () => {
 
         <div data-aos="zoom-in-up">
           {/* <h3>500&nbsp;+</h3> */}
-          <h3>{count1}</h3>
+          <h3>{count1}&nbsp;+</h3>
 
           <label>Professional Photographers</label>
         </div>
@@ -126,14 +126,14 @@ const Homepage = () => {
                 </Row>
                 <Row>
                   <Col>
-                    <Link href="/Photographer">
+                    {/* <Link href="/Photographer"> */}
                       <button className="details-btn">view Details</button>
-                    </Link>
+                    {/* </Link> */}
                   </Col>
                   <Col>
-                    <Link href="NewBooking">
+                    {/* <Link href="NewBooking"> */}
                       <button className="book-btn ">Book Now</button>
-                    </Link>
+                    {/* </Link> */}
                   </Col>
                 </Row>
               </div>
@@ -394,6 +394,7 @@ const Homepage = () => {
               src="/images/Ourprocess/Rectangle 2938@2x.png"
               alt="Image 1"
               className="w-100"
+              // width={auto} height={auto}
             />
             <h3 className="ImageContainer">Wedding Photography</h3>
           </Col>
@@ -402,6 +403,7 @@ const Homepage = () => {
               src="/images/Ourprocess/Rectangle 2938@2x.png"
               alt="Image 2"
               className="w-100"
+              // width={auto} height={auto}
             />
             <h3 className="ImageContainer">Portrait Photography</h3>
           </Col>
@@ -410,6 +412,7 @@ const Homepage = () => {
               src="/images/Ourprocess/Rectangle 2938@2x.png"
               alt="Image 3"
               className="w-100"
+              // width={auto} height={auto}
             />
             <h3 className="ImageContainer">Wildlife Photography</h3>
           </Col>
@@ -418,6 +421,7 @@ const Homepage = () => {
               src="/images/Ourprocess/Rectangle 2938@2x.png"
               alt="Image 4"
               className="w-100"
+              // width={auto} height={auto}
             />
             <h3 className="ImageContainer">Documentary Photography</h3>
           </Col>
@@ -432,6 +436,7 @@ const Homepage = () => {
             className="d-block w-100 "
             src="/images/Ourprocess/Rectangle 2943@2x.png"
             alt="First slide"
+            // width={auto} height={auto}
           />
           <Carousel.Caption>
             <h3>First slide label</h3>
@@ -443,6 +448,7 @@ const Homepage = () => {
             className="d-block w-100"
             src="/images/Ourprocess/Rectangle 2943@2x.png"
             alt="Second slide"
+            // width={auto} height={auto}
           />
 
           <Carousel.Caption>
@@ -455,6 +461,7 @@ const Homepage = () => {
             className="d-block w-100"
             src="/images/Ourprocess/Rectangle 2943@2x.png"
             alt="Third slide"
+            // width={auto} height={auto}
           />
 
           <Carousel.Caption>

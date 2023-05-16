@@ -136,7 +136,7 @@ const TermsandConditions = () => {
             <input type="checkbox"></input>
             <label>I agree all the Terms and Conditions</label>
           </div>
-          <Link href="/TermsandConditions">
+          <Link href="/HomePage">
             <button className="Booking-Button">Proceed</button>
           </Link>
         </Col>
