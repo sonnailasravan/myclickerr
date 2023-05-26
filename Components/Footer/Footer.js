@@ -1,38 +1,99 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bgchange">
-      <Container>
-        <Row>
-          <Col xs={12} md={6}>
-            <h5>About Us</h5>
-            <p>We are a company that does something amazing.</p>
-          </Col>
-          <Col xs={12} md={3}>
-            <h5>Links</h5>
-            <ul className="list-unstyled">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </Col>
-          <Col xs={12} md={3}>
-            <h5>Contact Us</h5>
-            <ul className="list-unstyled">
-              <li>123 Main St.</li>
-              <li>Suite 500</li>
-              <li>Anytown, USA 12345</li>
-              <li>Phone: 555-555-5555</li>
-              <li>Email: info@mycompany.com</li>
-            </ul>
-          </Col>
-        </Row>
-        <hr />
-        <p className="text-center">
-          &copy; {new Date().getFullYear()} My Clicker. All Rights Reserved.
-        </p>
+    <footer className="bgdark">
+      <Container className="bgchange">
+        <div className="mainfooter">
+          <div className="myfooter">
+            <div>
+              <Image
+                src="/Images/Group 5981@2x.png"
+                alt="Your Logo"
+                width={182}
+                height={40}
+              />
+              <label>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                quis risus mi. Ut placerat quam lectus. Curabitur dictum velit
+                non lacus ornare tempor.
+              </label>
+            </div>
+            <div className="footersocial">
+              <div>
+                <a href="https://www.instagram.com/">
+                  {" "}
+                  <Image
+                    src="/Images/Group 5979@2x.png"
+                    alt="Image 1"
+                    style={{ width: "" }}
+                    width={40}
+                    height={40}
+                  />
+                </a>
+                <a href="https://www.linkedin.com/">
+                  {" "}
+                  <Image
+                    src="/Images/Group 5978@2x.png"
+                    alt="Image 1"
+                    style={{ width: "" }}
+                    width={40}
+                    height={40}
+                  />
+                </a>
+                <a href="https://www.facebook.com/">
+                  {" "}
+                  <Image
+                    src="/Images/Group 5980@2x.png"
+                    alt="Image 1"
+                    style={{ width: "" }}
+                    width={40}
+                    height={40}
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div xs={12} md={3} className="footerside">
+            <div>
+              <Image
+                src="/Images/XMLID_146_@2x.png"
+                alt="Your Logo"
+                width={18.4}
+                height={14}
+              />
+              <label>info@myclicker.in</label>
+            </div>
+            <div>
+              <Image
+                src="/Images/bee4d62d12dd008a6ab2be9c9ad4c247@2x.png"
+                alt="Your Logo"
+                width={18.4}
+                height={14}
+              />
+              <label>+91 94853 94853</label>
+            </div>
+            <div>
+              <Image
+                src="/Images/ae85f5aeeb9ad1d3df18962e747bd309@2x.png"
+                alt="Your Logo"
+                width={18.4}
+                height={14}
+              />
+              <label>
+                Proin ex ipsum, facilisis id tincidunt sed, vulputate in lacus.
+                Donec pharetra faucibus leo, vitae vestibulum leo scelerisque
+                eu.
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div className="footerlast">
+          <p>@ 2023 Myclicker , All rights reserved</p>
+        </div>
       </Container>
     </footer>
   );

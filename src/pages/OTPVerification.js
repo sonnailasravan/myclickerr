@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import lottie from "lottie-web";
 import animationData from "../.././public/./Images/./Ourprocess/./movie-maker-making-movie (1).json";
+import style from "./../../src/styles/Homepage.module.css";
 
 const OTPVerification = () => {
   const container = useRef(null);
@@ -58,13 +59,83 @@ const OTPVerification = () => {
             />
           </div>
           <Link href="/TermsandConditions">
-            <button className="Booking-Button">Submit OTP</button>
+            <button className={style.BookingButton}>Submit OTP</button>
           </Link>
           <div className="resend-container">
             <label>
               Didn’t receive OTP? <span>Resend</span>
             </label>
           </div>
+        </Col>
+        <Col className="formColumnSmallScreenOtpVeri">
+          <Image
+            className="NavbarSmallScreenOTPVerif"
+            src="/images/Ourprocess/Group 5982@2x.png"
+            alt="Your Logo"
+            width={120}
+            height={40}
+            priority
+          />
+          <p className="paraSmallScreenOTpVer">OTP Verification</p>
+          <h1 className="headingEleSmallScreenOtp">Enter the OTP</h1>
+          <p className="paraSmallScreenOTpVer">
+            Enter the OTP sent to{" "}
+            <span className="spanElementOTPVer">123456789</span>
+            <Link href="/Login">Edit</Link>
+          </p>
+          {/* <div className="input-container">
+            <input
+              type="text"
+              value={OTP}
+              onChange={handleInputChange}
+              placeholder="Enter OTP"
+            />
+          </div> */}
+          <input
+            className="inputFeildOTPVerSmallScreen"
+            type="text"
+            placeholder="Enter OTP"
+          />
+          <p className="paraSmallScreenOTpVerDetails">
+            Didn’t receive OTP?{" "}
+            <span className="spanElementOTPVer">Resend</span>
+          </p>
+          <Link href="/TermsandConditions">
+            <button className="SubmitButtonOtpSmallScreen">Submit OTP</button>
+          </Link>
+          <div className="resend-container"></div>
+        </Col>
+
+        <Col className="formColumnSmallMediumOtpVeri">
+          <Image
+            className="NavbarMediumScreenOTPVerif"
+            src="/images/Ourprocess/Group 5982@2x.png"
+            alt="Your Logo"
+            width={120}
+            height={40}
+            priority
+          />
+          <p className="paraMediumScreenOTpVer">OTP Verification</p>
+          <h1 className="headingEleMediumScreenOtp">Enter the OTP</h1>
+          <p className="paraMediumScreenOTpVer">
+            Enter the OTP sent to{" "}
+            <span className="spanElementOTPVer">123456789</span>
+            <Link href="/Login">Edit</Link>
+          </p>
+
+          <input
+            className="inputFeildOTPVerMediumScreen"
+            type="text"
+            placeholder="Enter OTP"
+          />
+          <p className="paraMediumScreenOTpVerDetails">
+            Didn’t receive OTP?{" "}
+            <span className="spanElementOTPVer">Resend</span>
+          </p>
+          <Link href="/TermsandConditions">
+            <button className="SubmitButtonOtpMediumScreen">Submit OTP</button>
+          </Link>
+          <div className="resend-container"></div>
         </Col>
       </Row>
     </Container>

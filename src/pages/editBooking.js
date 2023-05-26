@@ -9,8 +9,11 @@ import { Card } from "react-bootstrap";
 import Link from "next/link";
 import axios from "axios";
 import { useRouter } from "next/router";
+import apiConfig from "./api/apiConfig";
 
 const NewBooking = () => {
+  const url=`${apiConfig.apiUrl}`
+  console.log(url)
   const router = useRouter();
   const { eventData } = router.query;
   const parsedEventData = useMemo(() => {

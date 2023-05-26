@@ -15,7 +15,7 @@ const Header = () => {
         <Navbar.Brand>
           <Image
             className="Navbar"
-            src="/images/logo.jpg"
+            src="/Images/logo.jpg"
             alt="Your Logo"
             width={182}
             height={40}

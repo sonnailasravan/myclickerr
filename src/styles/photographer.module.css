@@ -1,0 +1,530 @@
+.profilephoto {
+  display: grid;
+  grid-template-columns: 740px 360px;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+.myprofilephoto {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-gap: 10px;
+  box-shadow: 0px 5px 15px #3a3da01a;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 10px;
+  padding-top: 30px;
+}
+.paymentphoto {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  box-shadow: 0px 5px 15px #3a3da01a;
+  border-radius: 10px;
+  opacity: 1;
+}
+.paymentphoto h5 {
+  top: 313px;
+  left: 119px;
+  width: 11px;
+  height: 20px;
+  opacity: 1;
+  padding-top: 20px;
+  margin-left: 60px;
+}
+
+.paymentphoto h4 {
+  top: 340px;
+  left: 1270px;
+  width: 169px;
+  height: 34px;
+  opacity: 1;
+  margin-top: 10px;
+  max-width: 250px;
+}
+.paymentphoto > div > div > div:nth-child(1) {
+  background-color: #f7d8c3;
+  max-width: 2vw;
+  max-height: 7vh;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.paymentphoto > div > :nth-child(1) img {
+  margin: 3px;
+}
+
+.brucephoto div > div:nth-child(1) > label {
+  background: #e6e5ff;
+  border-radius: 10px;
+  opacity: 1;
+  font-size: 12px;
+  padding: 10px;
+}
+.brucephoto {
+  margin-left: 20px;
+}
+.brue1photo {
+  display: grid !important;
+  grid-template-columns: 60px 1fr;
+  gap: 10px;
+  margin-left: 0px;
+}
+
+.brucephoto div > div:nth-child(2) > h6 {
+  background: #e5ffea;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 10px;
+  margin-right: 200px;
+  max-width: fit-content;
+}
+.brucephoto div > div:nth-child(2) > a {
+  padding-left: 210px;
+  text-decoration: none;
+}
+.mainpaymentphoto {
+  display: grid;
+  grid-template-columns: 360px 360px 360px;
+  grid-gap: 20px;
+  height: 25vh;
+  margin-bottom: 30px;
+}
+.secondphoto {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  box-shadow: 0px 5px 15px #3a3da01a;
+  border-radius: 10px;
+  opacity: 1;
+}
+.secondphoto h5 {
+  top: 313px;
+  left: 119px;
+  width: 11px;
+  height: 20px;
+  opacity: 1;
+  padding-top: px;
+  margin-left: 60px;
+}
+.secondphoto h4 {
+  top: 340px;
+  left: 1270px;
+  opacity: 1;
+  margin-top: 10px;
+  max-width: 250px;
+}
+.secondphoto > div > div:nth-child(1) {
+  background-color: #fcddc8;
+  max-width: 2vw;
+  max-height: 6vh;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+.secondphoto > div > :nth-child(1) img {
+  margin: 3px;
+}
+
+.tap ul {
+  list-style-type: none;
+}
+.tap ul li:hover {
+  color: black;
+  cursor: pointer;
+}
+.tap ul li {
+  position: relative;
+  font-family: "poppins", sans-serif;
+  color: #a0a0a0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+.tap ul li::after {
+  content: "";
+  position: absolute;
+  background-color: #f06d10;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+}
+.tap ul li:hover::after {
+  width: 80%;
+}
+
+.content {
+  display: none;
+}
+.showcontent {
+  display: block;
+}
+.activephoto {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  background: #e6e6e6 0% 0% no-repeat padding-box;
+  max-width: fit-content;
+  height: 7vh;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-left: 11px;
+}
+/*--------- cards------ */
+.myBooking {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 16px #3a3da01a;
+  border-radius: 10px;
+  opacity: 1;
+  margin-top: 30px;
+  padding: 30px 30px 30px 30px;
+}
+.mycardprofile {
+  /* 2nd line cards css  */
+  display: grid;
+  grid-template-columns: 360px 360px 360px;
+  grid-gap: 20px;
+}
+
+.myBooking div > div > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+.myBooking div > div > div:nth-child(1) button {
+  margin-bottom: 20px;
+}
+.pendingbgn {
+  background: #f4f7ee 0% 0% no-repeat padding-box;
+  border: 1px solid #8fae57;
+  border-radius: 5px;
+  opacity: 1;
+  text-align: right;
+  font: normal normal 600 14px/44px Albert Sans;
+  letter-spacing: 0px;
+  color: #8fae57;
+  opacity: 1;
+  height: 10px;
+  padding-bottom: 40px;
+  font-size: 10px;
+}
+
+.myBooking div > :nth-of-type(2) {
+  display: flex;
+}
+
+.myBooking div > div > div:nth-child(2) > h6 {
+  padding-left: 10px;
+}
+
+.myBooking div > div > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid rgb(214, 204, 204);
+}
+.myBooking div > div > div:nth-child(3) > h6 {
+  padding-left: 11px;
+
+  font-size: smaller;
+}
+.myBooking div > div > div:nth-child(4) {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(214, 204, 204);
+}
+.myBooking div > div > div:nth-child(4) > label {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.myBooking div > div > div:nth-child(4) > h6 {
+  margin-top: 14px;
+}
+.myBooking div > div > div:nth-child(4) > h6 > i {
+  color: #2006b3;
+}
+.myBooking div > div:nth-child(5) {
+  margin-top: 10px;
+  display: flex;
+}
+.myBooking div > div > div:nth-child(5) h6 {
+  padding-right: 10px;
+  font-size: smaller;
+  margin-bottom: 2px;
+  margin-top: 7px;
+  font-weight: bold;
+}
+.myBooking div > div > div:nth-child(5) label {
+  opacity: 0.7;
+  font-size: smaller;
+  margin-left: 10px;
+}
+.myBooking div > div > div:nth-child(6) button {
+  margin-top: 20px;
+}
+.photoaccpet {
+  background: blue;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  border-color: transparent;
+  padding-left: 20px;
+  padding-right: 30px;
+  width: 100px;
+  height: 40px;
+}
+.photoReject {
+  background-color: #eaeaea;
+  color: #000000;
+  border-radius: 30px;
+
+  cursor: pointer;
+  border-color: transparent;
+  padding-left: 25px;
+  padding-right: 30px;
+  width: 100px;
+  height: 40px;
+}
+.chatsphoto {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vh;
+}
+
+/* Myphotos from bharath */
+
+.mainphotos > div:nth-child(2) h2 {
+  font-weight: bold;
+  font-size: larger;
+}
+.mainphotos > div:nth-child(1) h6 {
+  cursor: pointer;
+}
+.myphotos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 7vh;
+}
+
+/* New Equipment from bharath */
+
+.Gear {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.NewGearbtn {
+  background: linear-gradient(60deg, #ff8e3c, #b96c34);
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-color: transparent;
+}
+.Gearimg {
+  display: grid !important;
+  grid-template-columns: 100px 200px 20px 20px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 16px #3a3da01a;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 10px;
+  /* width:27vw; */
+}
+.Gearmain {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 370px 370px 370px;
+  grid-gap: 10px;
+  /* display: flex;
+       flex-direction: row;
+       justify-content: space-around; */
+}
+.Gearimg p {
+  margin-bottom: 10px;
+  font: Albert Sans;
+  letter-spacing: 0px;
+  color: #006fd1;
+  opacity: 1;
+  font-weight: 500;
+}
+
+.Gearimg h6 {
+  padding-top: 30px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #262d37;
+  opacity: 1;
+}
+.Gearimg img {
+  margin-top: 10px;
+}
+.Gearimg > div:nth-child(3) {
+  margin-top: 30px;
+}
+.Gearimg > div:nth-child(4) {
+  margin-top: 30px;
+}
+
+/* Equipments and Gear From Bharath */
+
+.Gear {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .NewGearbtn {
+    background: linear-gradient(60deg, #ff8e3c, #b96c34);
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-color: transparent;
+  }
+  .Gearimg {
+    display: grid !important;
+    grid-template-columns: 100px 200px 20px 20px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 16px #3a3da01a;
+    border-radius: 10px;
+    opacity: 1;
+    padding: 10px;
+    /* width:27vw; */
+  }
+  .Gearmain {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    grid-gap: 10px;
+    /* display: flex;
+       flex-direction: row;
+       justify-content: space-around; */
+  }
+  .Gearimg p {
+    margin-bottom: 10px;
+    font: Albert Sans;
+    letter-spacing: 0px;
+    color: #006fd1;
+    opacity: 1;
+    font-weight: 500;
+  }
+  
+  .Gearimg h6 {
+    padding-top: 30px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #262d37;
+    opacity: 1;
+  }
+  .Gearimg img {
+    margin-top: 10px;
+  }
+  .Gearimg > div:nth-child(3) {
+    margin-top: 30px;
+  }
+  .Gearimg > div:nth-child(4) {
+    margin-top: 30px;
+  }
+
+
+  /* AddWork styles from Bharath */
+
+  .addform{
+    margin-top: 30px;
+    margin-right: 20px;
+   }
+   .addform>div:nth-child(1){
+     margin-right: 40px;
+   }
+   .addprofile{
+    margin-top: 30px;
+   }
+   .addworkbgn{
+    margin-top: 30px;
+   }
+   .addworkicon>div:nth-child(1) h6{
+    cursor: pointer;
+   }
+   .addinput{
+    border: 1px solid #12121229;
+    padding: 10px;
+    width: 400px;
+    box-sizing: border-box;
+    outline:none;
+    border:1px solid #12121229;
+    border-radius: 5px;
+    
+  }
+   .addaddrres{
+    position: absolute;
+    top:10px;
+    left:8px;
+    font-size:14px;
+    padding: 0px 5px;
+    color:#121212;
+    transition: 0.3s;
+    pointer-events:none;
+    background-color: #ffffff;
+    opacity: 0.8;
+   
+  }
+  .addinput:focus + .addaddrres{
+    top:-10px;
+    color: #121212;
+    background-color: #ffffff;
+    
+  }
+  .mainnputadd{
+    position: relative;
+    
+  }
+
+  /* New Equipment css  from bharath*/
+
+  .Addmedia{
+    opacity: 0.8;
+    margin-top: 10px
+    }
+    .NewEquipment{
+        margin-top: 10px;
+    }
+    .addmediaimg{
+        border: 1px solid #12121229;
+    border-radius: 5px;
+    max-width: 30vh;
+    height: 30vh;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 10px;
+    }
+    .addmediaimg input{
+        display: none;
+        visibility: hidden;
+    }
+    .NewEquipmentform{
+    margin-top: 5vh;
+     display: flex;
+     /* width: 20vw; */
+    }
+    .NewEquipmentform label{
+     font-weight: 500;
+    }
+    .NewEquipmentbtn{
+        background: linear-gradient(60deg, #FF8E3C, #B96C34);
+        color: #fff;  
+        border-radius: 30px;  
+        padding: 10px 20px;  
+        cursor: pointer; 
+        border-color: transparent;
+        margin-top: 5vh;
+        width: 17vw;
+        
+    }
+    .NewEquipment span{
+        width: 11px;
+        height: 20px;
+    }

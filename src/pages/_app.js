@@ -1,29 +1,29 @@
-import '@/styles/globals.css'
+import "@/styles/globals.css";
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'aos/dist/aos.css';
-import AOS from 'aos'
-import { useEffect } from 'react';
-import Head from 'next/head';
-
+import "bootstrap/dist/css/bootstrap.css";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from "react";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init({
       duration: 1000,
-      easing: 'ease-in-out-back',
+      easing: "ease-in-out-back",
       once: true,
     });
   }, []);
-  return(
+  return (
     <>
-     <Head>
+      <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Your app description" />
       </Head>
-   <Component {...pageProps} />
-   </>
-  )
- 
+      <div id="root">
+        <Component {...pageProps} />
+      </div>
+    </>
+  );
 }

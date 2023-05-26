@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import lottie from "lottie-web";
 import animationData from "../.././public/./Images/./Ourprocess/./professional-photographer-taking-picture (1).json";
+import style from "./../../src/styles/Homepage.module.css";
 
 const TermsandConditions = () => {
   const container = useRef(null);
@@ -137,7 +138,202 @@ const TermsandConditions = () => {
             <label>I agree all the Terms and Conditions</label>
           </div>
           <Link href="/HomePage">
-            <button className="Booking-Button">Proceed</button>
+            <button className={style.BookingButton}>Proceed</button>
+          </Link>
+        </Col>
+        <Col className="formColumnSmallscreen">  
+        <Image
+            className="navbarsmallscreenTermsAndCondition"
+            src="/images/Ourprocess/Group 5982@2x.png"
+            alt="Your Logo"
+            width={182}
+            height={40}
+            priority
+          />
+
+
+          <h1 className="headingEleTermsAndConSmallScreen">
+            Welcome to MyClicker
+          </h1>
+          <p className="paraEleTermsAndCondSmallScreen">
+            Accept the terms and conditions to complete <br/>  <span className="spanEleSmallScreen" >your signup process</span>
+          </p>
+          <div className="listContSmallScreen">
+            <ul className="ulContSmallScreen">
+              <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+            </ul>
+          </div>
+          <div className="terms-container">
+            <input type="checkbox"></input>
+            <label className="labelSmallScreen">I agree all the Terms and Conditions</label>
+          </div>
+          <Link href="/HomePage">
+            <button className="buttonProceedSmallScreenTermsAndCondi">Proceed</button>
+          </Link>
+        </Col>
+
+        <Col className="formColumnMediumscreen">  
+        <Image
+            className="navbarMediumscreenTermsAndCondition"
+            src="/images/Ourprocess/Group 5982@2x.png"
+            alt="Your Logo"
+            width={182}
+            height={40}
+            priority
+          />
+
+
+          <h1 className="headingEleTermsAndConMediumScreen">
+            Welcome to MyClicker
+          </h1>
+          <p className="paraEleTermsAndCondMediumScreen">
+            Accept the terms and conditions to complete <span>your signup process</span>
+          </p>
+          <div className="listContMediumScreen">
+            <ul className="ulContMediumScreen">
+              <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+             <li className="liCont">
+                Static content goes hereStatic content goes hereStatic content
+                goes hereStatic content goes hereStatic content goes here
+             </li>
+            </ul>
+          </div>
+          <div className="terms-container">
+            <input type="checkbox"></input>
+            <label className="labelMediumScreen">I agree all the Terms and Conditions</label>
+          </div>
+          <Link href="/HomePage">
+            <button className="buttonProceedMediumScreenTermsAndCondi">Proceed</button>
           </Link>
         </Col>
       </Row>

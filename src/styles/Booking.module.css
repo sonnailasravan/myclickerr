@@ -1,7 +1,7 @@
 /* @import "bootstrap/dist/css/bootstrap.css"; */
 @font-face {
   font-family: "AlbertSans";
-  src: url('../fonts/AlbertSans-Regular.ttf') format('truetype');
+  src: url('/../fonts/AlbertSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
