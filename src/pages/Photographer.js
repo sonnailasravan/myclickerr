@@ -143,7 +143,7 @@ const photographer = () => {
           <div className="photographerborder"></div>
           <div className="photographermain-smallimage">
             <div>
-              <img src="/images/person.jpg.png" alt="Image" />
+              <Image src="/images/person.jpg.png" alt="Image" />
             </div>
 
             <div>
