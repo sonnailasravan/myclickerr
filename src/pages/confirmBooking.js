@@ -8,7 +8,7 @@ import Image from "next/image";
 import axios from "axios";
 import RescheduleBooking from "./Reschedule Booking";
 import CancelBooking from "./CancelBooking";
-import { BsArrowLeft } from "react-icons/Bs";
+import { BsArrowLeft } from "react-icons/bs";
 import { IoMdRadioButtonOn } from "react-icons/Io";
 import { AiOutlineCalendar } from "react-icons/Ai";
 import { GoLocation } from "react-icons/Go";

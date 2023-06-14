@@ -10,7 +10,7 @@ import Link from "next/link";
 import axios from "axios";
 import { useRouter } from "next/router";
 
-import { BsArrowLeft } from "react-icons/Bs";
+import { BsArrowLeft } from "react-icons/bs";
 
 const NewBooking = () => {
   const router = useRouter();

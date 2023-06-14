@@ -1,6 +1,6 @@
 import React from "react"
 import style from "./../../src/styles/Homepage.module.css";
-import {HiOutlineLogout} from "react-icons/Hi"
+import {HiOutlineLogout} from "react-icons/hi"
 function Dropdownprofiles(){
  return(
     <div className={style.dropdownprofiles}>

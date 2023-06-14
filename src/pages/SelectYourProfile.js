@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import lottie from "lottie-web";
 import animationData from "../.././public/./Images/./Ourprocess/./professional-photographer-taking-picture (1).json";
-import { TiTick } from 'react-icons/Ti';
-import {MdNavigateNext} from "react-icons/Md"
+import { TiTick } from 'react-icons/ti';
+import {MdNavigateNext} from "react-icons/md"
 const SelectYourProfile = () => {
   const container = useRef(null);
   useEffect(() => {
