@@ -2965,7 +2965,7 @@ input[type="text"]:focus::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: start;
+    align-items: flex-start;
   }
 
   .AddSkillsScrollCont {
@@ -3068,7 +3068,7 @@ input[type="text"]:focus::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: start;
+   align-items: flex-start;
   }
 
   .AddSkillsScrollCont {
@@ -3300,7 +3300,7 @@ input[type="text"]:focus::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: start;
+   align-items: flex-start;
   }
 
   .myPortfolioScrollCont {
@@ -3397,7 +3397,7 @@ input[type="text"]:focus::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: start;
+   align-items: flex-start;
     width: 35vw !important;
     height: auto;
   }
@@ -3512,7 +3512,7 @@ input[type="text"]:focus::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: start;
+   align-items: flex-start;
     height: 100vh;
     width: 100vw;
     margin-left: 3vw;
@@ -3625,7 +3625,7 @@ input[type="text"]:focus::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: start;
+   align-items: flex-start;
   }
 
   .myPortfolioMediaScrollCont {
@@ -3725,7 +3725,7 @@ input[type="text"]:focus::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: start;
+    align-items: flex-start;
     width: 30vw !important;
     height: 100vh !important;
   }

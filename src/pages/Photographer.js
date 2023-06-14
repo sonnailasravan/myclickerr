@@ -1,5 +1,5 @@
 import MainHeader from "./MainHeader";
-import {  Carousel,Container, Row, Col } from "react-bootstrap";
+import { Carousel, Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
@@ -8,7 +8,7 @@ const photographer = () => {
   return (
     <div>
       <div className="NavBar">
-        <MainHeader/>
+        <MainHeader />
       </div>
       <Container>
         <div className="headerphotographerhome">
@@ -30,7 +30,12 @@ const photographer = () => {
             <Row>
               <Col>
                 <div className="photographermain-image">
-                  <Image src="/Images/person.jpg.png" alt="Image" width={40} height={40} />
+                  <Image
+                    src="/Images/person.jpg.png"
+                    alt="Image"
+                    width={40}
+                    height={40}
+                  />
                 </div>
 
                 <div className="info">
@@ -42,19 +47,18 @@ const photographer = () => {
                       </h6>
                     </div>
                     <div>
-                      <Link href='NewBooking'>
-                      
-                      <button
-                        type="button"
-                        className="btn"
-                        style={{
-                          width: "250px",
-                          backgroundColor: "#8E2ADB",
-                          color: "white",
-                        }}
-                      >
-                        Book Now
-                      </button>
+                      <Link href="NewBooking">
+                        <button
+                          type="button"
+                          className="btn"
+                          style={{
+                            width: "250px",
+                            backgroundColor: "#8E2ADB",
+                            color: "white",
+                          }}
+                        >
+                          Book Now
+                        </button>
                       </Link>
                     </div>
                   </div>
@@ -143,7 +147,7 @@ const photographer = () => {
           <div className="photographerborder"></div>
           <div className="photographermain-smallimage">
             <div>
-              <img src="/images/person.jpg.png" alt="Image" />
+              <Image src="/images/person.jpg.png" alt="Image" />
             </div>
 
             <div>
@@ -204,196 +208,193 @@ const photographer = () => {
           <div className="photographer-carousel">
             <Carousel>
               <Carousel.Item>
-              <div className="second-photorows">
-            <div className="second-row-imgss">
-              <div>
-                <Image
-                  src="/images/Rectangle 9915@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Ourprocess/Rectangle 2938@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Ourprocess/Rectangle 2943@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-            </div>
-            <div className="second-row-imgss">
-              <div>
-                <Image
-                  src="/images/Ourprocess/Rectangle 2937@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Ourprocess/Rectangle 2937@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Ourprocess/Rectangle 2938@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-            </div>
-          </div>
-                  
-                <Carousel.Caption>
-                 
-                </Carousel.Caption>
+                <div className="second-photorows">
+                  <div className="second-row-imgss">
+                    <div>
+                      <Image
+                        src="/images/Rectangle 9915@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src="/images/Ourprocess/Rectangle 2938@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src="/images/Ourprocess/Rectangle 2943@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                  </div>
+                  <div className="second-row-imgss">
+                    <div>
+                      <Image
+                        src="/images/Ourprocess/Rectangle 2937@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src="/images/Ourprocess/Rectangle 2937@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src="/images/Ourprocess/Rectangle 2938@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <Carousel.Caption></Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-              <div className="second-photorows">
-            <div className="second-row-imgss">
-              <div>
-                <Image
-                  src="/images/Rectangle 9915@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Ourprocess/Rectangle 2938@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Ourprocess/Rectangle 2943@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-            </div>
-            <div className="second-row-imgss">
-              <div>
-                <Image
-                  src="/images/Ourprocess/Rectangle 2937@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Ourprocess/Rectangle 2937@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Ourprocess/Rectangle 2938@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-            </div>
-          </div>
-                <Carousel.Caption>
-                </Carousel.Caption>
+                <div className="second-photorows">
+                  <div className="second-row-imgss">
+                    <div>
+                      <Image
+                        src="/images/Rectangle 9915@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src="/images/Ourprocess/Rectangle 2938@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src="/images/Ourprocess/Rectangle 2943@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                  </div>
+                  <div className="second-row-imgss">
+                    <div>
+                      <Image
+                        src="/images/Ourprocess/Rectangle 2937@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src="/images/Ourprocess/Rectangle 2937@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src="/images/Ourprocess/Rectangle 2938@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <Carousel.Caption></Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-              <div className="second-photorows">
-            <div className="second-row-imgss">
-              <div>
-                <Image
-                  src="/images/Rectangle 9915@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Ourprocess/Rectangle 2938@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Ourprocess/Rectangle 2943@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-            </div>
-            <div className="second-row-imgss">
-              <div>
-                <Image
-                  src="/images/Ourprocess/Rectangle 2937@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Ourprocess/Rectangle 2937@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Ourprocess/Rectangle 2938@2x.png"
-                  alt="Image 1"
-                  style={{ width: "100%" }}
-                  width={150}
-                  height={70}
-                />
-              </div>
-            </div>
-          </div>
+                <div className="second-photorows">
+                  <div className="second-row-imgss">
+                    <div>
+                      <Image
+                        src="/images/Rectangle 9915@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src="/images/Ourprocess/Rectangle 2938@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src="/images/Ourprocess/Rectangle 2943@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                  </div>
+                  <div className="second-row-imgss">
+                    <div>
+                      <Image
+                        src="/images/Ourprocess/Rectangle 2937@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src="/images/Ourprocess/Rectangle 2937@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src="/images/Ourprocess/Rectangle 2938@2x.png"
+                        alt="Image 1"
+                        style={{ width: "100%" }}
+                        width={150}
+                        height={70}
+                      />
+                    </div>
+                  </div>
+                </div>
 
                 <Carousel.Caption>
                   {/* <h3>Third slide label</h3>

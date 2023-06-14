@@ -12,10 +12,10 @@ import { Container, Row, Col } from "react-bootstrap";
         <div>
         <Container>
         <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-        <li class="breadcrumb-item active"><a href="#"></a>Home</li>
-         <li class="breadcrumb-item active"><a href="#"></a> My Profile</li>
-        <li class="breadcrumb-item " aria-current="page">My Portfolio</li>
+        <ol className="breadcrumb">
+        <li className="breadcrumb-item active"><a href="#"></a>Home</li>
+         <li className="breadcrumb-item active"><a href="#"></a> My Profile</li>
+        <li className="breadcrumb-item " aria-current="page">My Portfolio</li>
         </ol>
         </nav>
         <div className={style.addworkicon}>
@@ -33,7 +33,7 @@ import { Container, Row, Col } from "react-bootstrap";
   </div>
   <div className={style.addmediaimg}>
     
-    <label for="fistimg">          
+    <label htmlFor="fistimg">          
     <Image  
         src="/images/5e22b7e4e6c3f59ce415dd8e5104d203@2x.png"
         alt="Image 1"
