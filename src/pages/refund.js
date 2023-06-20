@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+// import React, { useState, useRef, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,22 +7,22 @@ import animationData from "../.././public/./Images/./Ourprocess/./professional-p
 import style from "./../../src/styles/Homepage.module.css";
 
 const refund = () => {
-  const container = useRef(null);
-  useEffect(() => {
-    const anim = lottie.loadAnimation({
-      container: container.current,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: animationData,
-    });
-    return () => anim.destroy();
-  }, []);
-  const [OTP, setOTP] = useState("");
+  // const container = useRef(null);
+  // useEffect(() => {
+  //   const anim = lottie.loadAnimation({
+  //     container: container.current,
+  //     renderer: "svg",
+  //     loop: true,
+  //     autoplay: true,
+  //     animationData: animationData,
+  //   });
+  //   return () => anim.destroy();
+  // }, []);
+  // const [OTP, setOTP] = useState("");
 
-  const handleInputChange = (e) => {
-    setOTP(e.target.value);
-  };
+  // const handleInputChange = (e) => {
+  //   setOTP(e.target.value);
+  // };
 
   return (
     <Container className="landingpage">
@@ -58,15 +58,16 @@ const refund = () => {
                 <h6>Effective Date: 19-06-2023 </h6>
               </div>
 
-              <label style={{ fontSize: "14px", textAlign: "justify" }}>
-                Thank you for choosing MyClicker Photography Services
-                ("MyClicker," "we," "us," or "our"). This Refund Policy explains
-                the terms and conditions regarding refunds for the photography
-                services provided through our website www.myclicker.com
-                ("Website"). By booking our services, you agree to comply with
-                and be bound by this Refund Policy. If you do not agree with
-                this policy, please refrain from booking our services.
-              </label>
+            <label style={{ fontSize: "14px", textAlign: "justify" }}>
+  Thank you for choosing MyClicker Photography Services
+  (&quot;MyClicker,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). This Refund Policy explains
+  the terms and conditions regarding refunds for the photography
+  services provided through our website www.myclicker.com
+  (&quot;Website&quot;). By booking our services, you agree to comply with
+  and be bound by this Refund Policy. If you do not agree with
+  this policy, please refrain from booking our services.
+</label>
+
 
               <li>
                 <h5>
@@ -208,15 +209,16 @@ const refund = () => {
                 <h6>Effective Date: 19-06-2023 </h6>
               </div>
 
-              <label style={{ fontSize: "14px", textAlign: "justify" }}>
-                Thank you for choosing MyClicker Photography Services
-                ("MyClicker," "we," "us," or "our"). This Refund Policy explains
-                the terms and conditions regarding refunds for the photography
-                services provided through our website www.myclicker.com
-                ("Website"). By booking our services, you agree to comply with
-                and be bound by this Refund Policy. If you do not agree with
-                this policy, please refrain from booking our services.
-              </label>
+            <label style={{ fontSize: "14px", textAlign: "justify" }}>
+  Thank you for choosing MyClicker Photography Services
+  (&quot;MyClicker,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). This Refund Policy explains
+  the terms and conditions regarding refunds for the photography
+  services provided through our website www.myclicker.com
+  (&quot;Website&quot;). By booking our services, you agree to comply with
+  and be bound by this Refund Policy. If you do not agree with
+  this policy, please refrain from booking our services.
+</label>
+
 
               <li>
                 <h5>
@@ -363,15 +365,16 @@ const refund = () => {
                 <h6>Effective Date: 19-06-2023 </h6>
               </div>
 
-              <label style={{ fontSize: "14px", textAlign: "justify" }}>
-                Thank you for choosing MyClicker Photography Services
-                ("MyClicker," "we," "us," or "our"). This Refund Policy explains
-                the terms and conditions regarding refunds for the photography
-                services provided through our website www.myclicker.com
-                ("Website"). By booking our services, you agree to comply with
-                and be bound by this Refund Policy. If you do not agree with
-                this policy, please refrain from booking our services.
-              </label>
+            <label style={{ fontSize: "14px", textAlign: "justify" }}>
+  Thank you for choosing MyClicker Photography Services
+  (&quot;MyClicker,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). This Refund Policy explains
+  the terms and conditions regarding refunds for the photography
+  services provided through our website www.myclicker.com
+  (&quot;Website&quot;). By booking our services, you agree to comply with
+  and be bound by this Refund Policy. If you do not agree with
+  this policy, please refrain from booking our services.
+</label>
+
 
               <li>
                 <h5>

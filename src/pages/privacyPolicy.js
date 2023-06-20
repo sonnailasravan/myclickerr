@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+// import React, { useState, useRef, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,22 +7,22 @@ import animationData from "../.././public/./Images/./Ourprocess/./professional-p
 import style from "./../../src/styles/Homepage.module.css";
 
 const privacyPolicy = () => {
-  const container = useRef(null);
-  useEffect(() => {
-    const anim = lottie.loadAnimation({
-      container: container.current,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: animationData,
-    });
-    return () => anim.destroy();
-  }, []);
-  const [OTP, setOTP] = useState("");
+  // const container = useRef(null);
+  // useEffect(() => {
+  //   const anim = lottie.loadAnimation({
+  //     container: container.current,
+  //     renderer: "svg",
+  //     loop: true,
+  //     autoplay: true,
+  //     animationData: animationData,
+  //   });
+  //   return () => anim.destroy();
+  // }, []);
+  // const [OTP, setOTP] = useState("");
 
-  const handleInputChange = (e) => {
-    setOTP(e.target.value);
-  };
+  // const handleInputChange = (e) => {
+  //   setOTP(e.target.value);
+  // };
 
   return (
     <Container className="landingpage">
@@ -59,15 +59,16 @@ const privacyPolicy = () => {
               </div>
 
               <label style={{ fontSize: "14px", textAlign: "justify" }}>
-                Thank you for visiting www.myclicker.com ("Website"), owned and
+                Thank you for visiting www.myclicker.com (&quot;Website&quot;), owned and
                 operated by FCS (Fineant Consultant Service PVT LTD)
-                ("MyClicker," "we," "us," or "our"). We are committed to
-                protecting your privacy and ensuring the security of your
-                personal information. This Privacy Policy outlines how we
-                collect, use, disclose, and protect the information you provide
-                to us through the Website. By accessing or using our Website,
-                you agree to the terms of this Privacy Policy.
+                (&quot;MyClicker,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). We
+                are committed to protecting your privacy and ensuring the security of your
+                personal information. This Privacy Policy outlines how we collect, use,
+                disclose, and protect the information you provide to us through the Website.
+                By accessing or using our Website, you agree to the terms of this Privacy
+                Policy.
               </label>
+
 
               <li>
                 <h5>
@@ -118,8 +119,8 @@ const privacyPolicy = () => {
                     <li>How We Use Your Information</li>
                     <b>    We use the information we collect for various purposes,
                       including but not limited to:</b>
-                  
-                    
+
+
                     <li>
                       Providing and personalizing our photography services
                     </li>
@@ -173,14 +174,15 @@ const privacyPolicy = () => {
               <li>
                 <h5>Security</h5>
                 <label style={{ fontSize: "14px", textAlign: "justify" }}>
-                  We implement appropriate technical and organizational measures
-                  to protect your personal information from unauthorized access,
-                  loss, misuse, or alteration. However, please note that no
-                  method of transmission over the Internet or electronic storage
-                  is 100% secure. Therefore, while we strive to use commercially
-                  acceptable means to protect your personal information, we
-                  cannot guarantee its absolute security.
-                </label>
+                Thank you for visiting www.myclicker.com (&quot;Website&quot;), owned and
+                operated by FCS (Fineant Consultant Service PVT LTD)
+                (&quot;MyClicker,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). We
+                are committed to protecting your privacy and ensuring the security of your
+                personal information. This Privacy Policy outlines how we collect, use,
+                disclose, and protect the information you provide to us through the Website.
+                By accessing or using our Website, you agree to the terms of this Privacy
+                Policy.
+              </label>
               </li>
               <li>
                 <h5> Third-Party Links</h5>
@@ -192,7 +194,7 @@ const privacyPolicy = () => {
                   third-party websites you visit.
                 </label>
               </li>
-              <h3>Children's Privacy </h3>
+              <h3>Children&apos;s Privacy </h3>
               <li>
                 <h5> Photography Services</h5>
                 <label style={{ fontSize: "14px", textAlign: "justify" }}>
@@ -242,7 +244,7 @@ const privacyPolicy = () => {
             <span className="spanEleSmallScreen">your signup process</span>
           </p>
           <div className="listContSmallScreen">
-          <ul style={{ listStyleType: "none" }}>
+            <ul style={{ listStyleType: "none" }}>
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <h4>
                   <b>PrivacyPolicy</b>
@@ -251,16 +253,15 @@ const privacyPolicy = () => {
               </div>
 
               <label style={{ fontSize: "14px", textAlign: "justify" }}>
-                Thank you for visiting www.myclicker.com ("Website"), owned and
+                Thank you for visiting www.myclicker.com (&quot;Website&quot;), owned and
                 operated by FCS (Fineant Consultant Service PVT LTD)
-                ("MyClicker," "we," "us," or "our"). We are committed to
-                protecting your privacy and ensuring the security of your
-                personal information. This Privacy Policy outlines how we
-                collect, use, disclose, and protect the information you provide
-                to us through the Website. By accessing or using our Website,
-                you agree to the terms of this Privacy Policy.
+                (&quot;MyClicker,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). We
+                are committed to protecting your privacy and ensuring the security of your
+                personal information. This Privacy Policy outlines how we collect, use,
+                disclose, and protect the information you provide to us through the Website.
+                By accessing or using our Website, you agree to the terms of this Privacy
+                Policy.
               </label>
-
               <li>
                 <h5>
                   <bold>Information We Collect</bold>
@@ -310,8 +311,8 @@ const privacyPolicy = () => {
                     <li>How We Use Your Information</li>
                     <b>    We use the information we collect for various purposes,
                       including but not limited to:</b>
-                  
-                    
+
+
                     <li>
                       Providing and personalizing our photography services
                     </li>
@@ -384,7 +385,7 @@ const privacyPolicy = () => {
                   third-party websites you visit.
                 </label>
               </li>
-              <h3>Children's Privacy </h3>
+              <h3>Children &apos;s Privacy </h3>
               <li>
                 <h5> Photography Services</h5>
                 <label style={{ fontSize: "14px", textAlign: "justify" }}>
@@ -439,7 +440,7 @@ const privacyPolicy = () => {
             <span>your signup process</span>
           </p>
           <div className="listContMediumScreen">
-          <ul style={{ listStyleType: "none" }}>
+            <ul style={{ listStyleType: "none" }}>
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <h4>
                   <b>PrivacyPolicy</b>
@@ -448,15 +449,16 @@ const privacyPolicy = () => {
               </div>
 
               <label style={{ fontSize: "14px", textAlign: "justify" }}>
-                Thank you for visiting www.myclicker.com ("Website"), owned and
-                operated by FCS (Fineant Consultant Service PVT LTD)
-                ("MyClicker," "we," "us," or "our"). We are committed to
-                protecting your privacy and ensuring the security of your
-                personal information. This Privacy Policy outlines how we
-                collect, use, disclose, and protect the information you provide
-                to us through the Website. By accessing or using our Website,
-                you agree to the terms of this Privacy Policy.
-              </label>
+  Thank you for visiting www.myclicker.com (&ldquo;Website&rdquo;), owned and
+  operated by FCS (Fineant Consultant Service PVT LTD)
+  (&ldquo;MyClicker,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;). We are committed to
+  protecting your privacy and ensuring the security of your
+  personal information. This Privacy Policy outlines how we
+  collect, use, disclose, and protect the information you provide
+  to us through the Website. By accessing or using our Website,
+  you agree to the terms of this Privacy Policy.
+</label>
+
 
               <li>
                 <h5>
@@ -507,8 +509,8 @@ const privacyPolicy = () => {
                     <li>How We Use Your Information</li>
                     <b>    We use the information we collect for various purposes,
                       including but not limited to:</b>
-                  
-                    
+
+
                     <li>
                       Providing and personalizing our photography services
                     </li>
@@ -581,7 +583,7 @@ const privacyPolicy = () => {
                   third-party websites you visit.
                 </label>
               </li>
-              <h3>Children's Privacy </h3>
+              <h3>Children &apos;s Privacy </h3>
               <li>
                 <h5> Photography Services</h5>
                 <label style={{ fontSize: "14px", textAlign: "justify" }}>

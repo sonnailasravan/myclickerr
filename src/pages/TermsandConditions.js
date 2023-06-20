@@ -56,15 +56,15 @@ const TermsandConditions = () => {
                 <h6>Effective Date:19-06-2023 </h6>
               </div>
 
-              <label style={{ fontSize: "14px", textAlign: "justify" }}>
-                Welcome to www.myclicker.com("Website"), owned and operated by
-                FCS (Fineant Consultant Service PVT LTD) ("MyClicker," "we,"
-                "us," or "our"). These Terms and Conditions govern your use of
-                our Website and the services provided through it. By accessing
-                or using our Website, you agree to comply with and be bound by
-                these Terms and Conditions. If you do not agree with these
-                terms, please do not use our Website.
-              </label>
+           <label style={{ fontSize: "14px", textAlign: "justify" }}>
+  Welcome to www.myclicker.com(&quot;Website&quot;), owned and operated by
+  FCS (Fineant Consultant Service PVT LTD) (&quot;MyClicker,&quot; &quot;we,&quot;
+  &quot;us,&quot; or &quot;our&quot;). These Terms and Conditions govern your use of
+  our Website and the services provided through it. By accessing
+  or using our Website, you agree to comply with and be bound by
+  these Terms and Conditions. If you do not agree with these
+  terms, please do not use our Website.
+</label>
 
               <li >
                 <h5>
@@ -216,15 +216,15 @@ const TermsandConditions = () => {
                 <h6>Effective Date:19-06-2023 </h6>
               </div>
 
-              <label style={{ fontSize: "14px", textAlign: "justify" }}>
-                Welcome to www.myclicker.com("Website"), owned and operated by
-                FCS (Fineant Consultant Service PVT LTD) ("MyClicker," "we,"
-                "us," or "our"). These Terms and Conditions govern your use of
-                our Website and the services provided through it. By accessing
-                or using our Website, you agree to comply with and be bound by
-                these Terms and Conditions. If you do not agree with these
-                terms, please do not use our Website.
-              </label>
+           <label style={{ fontSize: "14px", textAlign: "justify" }}>
+  Welcome to www.myclicker.com(&quot;Website&quot;), owned and operated by
+  FCS (Fineant Consultant Service PVT LTD) (&quot;MyClicker,&quot; &quot;we,&quot;
+  &quot;us,&quot; or &quot;our&quot;). These Terms and Conditions govern your use of
+  our Website and the services provided through it. By accessing
+  or using our Website, you agree to comply with and be bound by
+  these Terms and Conditions. If you do not agree with these
+  terms, please do not use our Website.
+</label>
 
               <li >
                 <h5>
@@ -432,15 +432,15 @@ const TermsandConditions = () => {
                 <h6>Effective Date:19-06-2023 </h6>
               </div>
 
-              <label style={{ fontSize: "14px", textAlign: "justify" }}>
-                Welcome to www.myclicker.com("Website"), owned and operated by
-                FCS (Fineant Consultant Service PVT LTD) ("MyClicker," "we,"
-                "us," or "our"). These Terms and Conditions govern your use of
-                our Website and the services provided through it. By accessing
-                or using our Website, you agree to comply with and be bound by
-                these Terms and Conditions. If you do not agree with these
-                terms, please do not use our Website.
-              </label>
+           <label style={{ fontSize: "14px", textAlign: "justify" }}>
+  Welcome to www.myclicker.com(&quot;Website&quot;), owned and operated by
+  FCS (Fineant Consultant Service PVT LTD) (&quot;MyClicker,&quot; &quot;we,&quot;
+  &quot;us,&quot; or &quot;our&quot;). These Terms and Conditions govern your use of
+  our Website and the services provided through it. By accessing
+  or using our Website, you agree to comply with and be bound by
+  these Terms and Conditions. If you do not agree with these
+  terms, please do not use our Website.
+</label>
 
               <li >
                 <h5>

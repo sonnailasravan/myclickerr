@@ -16,7 +16,7 @@ const Footer = () => {
                 width={182}
                 height={40} />
               <label>
-              At Myclickerr, we understand the importance of photography in preserving memories that last a lifetime. Whether it's a wedding, a family portrait, a corporate event, or a special occasion, we believe that every moment deserves to be cherished and captured in its true essence.
+                At Myclickerr, we understand the importance of photography in preserving memories that last a lifetime. Whether it&apos;s a wedding, a family portrait, a corporate event, or a special occasion, we believe that every moment deserves to be cherished and captured in its true essence.
               </label>
             </div>
             <div className='footersocial'>
@@ -79,26 +79,26 @@ const Footer = () => {
                 width={16}
                 height={14} />
               <label>
-              DLF CYBER CITY, 1st Floor, Vasista Bhavan, Opp lane to, APHB Colony, Indira Nagar, Gachibowli, Hyderabad, Telangana 500032
+                DLF CYBER CITY, 1st Floor, Vasista Bhavan, Opp lane to, APHB Colony, Indira Nagar, Gachibowli, Hyderabad, Telangana 500032
               </label>
             </div>
           </div>
           <div className='footer_policy'>
             <ul>
               <Link href='TermsandConditions'>
-              <li>
-                Terms and Conditions
-              </li>
+                <li>
+                  Terms and Conditions
+                </li>
               </Link>
               <Link href='privacyPolicy'>
-              <li>
-                Privacy Policy
-              </li>
+                <li>
+                  Privacy Policy
+                </li>
               </Link>
               <Link href='refund'>
-              <li>
-                Refund Policy
-              </li>
+                <li>
+                  Refund Policy
+                </li>
               </Link>
             </ul>
           </div>
