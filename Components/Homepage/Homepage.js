@@ -1,3 +1,4 @@
+"@useClient"
 import React, { useRef, useEffect, useState } from "react";
 import { Container, Row, Col, Image, Carousel } from "react-bootstrap";
 import Footer from "../Footer/Footer";

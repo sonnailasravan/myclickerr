@@ -49,41 +49,54 @@ const TermsandConditions = () => {
           <label className="OTPField">
             Accept the terms and conditions to complete your signup process
           </label> */}
-          <div className="static-content-container">
-            <ul style={{ listStyleType: 'none' }}>
-              <div style={{display:"flex",justifyContent:"space-between"}}>
-                <h4><b>Terms and Conditions</b></h4>
-                <h6>Effective Date:19-06-2023 </h6>
+          <div
+            className="static-content-container"
+            style={{ userSelect: "none" }}
+          >
+            <ul style={{ listStyleType: "none" }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "20px 10px 10px 10px",
+                }}
+              >
+                <h3>
+                  <b>Terms and Conditions</b>
+                </h3>
+                <label style={{ fontSize: "12px" }}>
+                  (Effective Date: 19/06/2023){" "}
+                </label>
               </div>
 
-           <label style={{ fontSize: "14px", textAlign: "justify" }}>
-  Welcome to www.myclicker.com(&quot;Website&quot;), owned and operated by
-  FCS (Fineant Consultant Service PVT LTD) (&quot;MyClicker,&quot; &quot;we,&quot;
-  &quot;us,&quot; or &quot;our&quot;). These Terms and Conditions govern your use of
-  our Website and the services provided through it. By accessing
-  or using our Website, you agree to comply with and be bound by
-  these Terms and Conditions. If you do not agree with these
-  terms, please do not use our Website.
-</label>
+              <label style={{ fontSize: "14px", textAlign: "justify" }}>
+                Welcome to www.myclicker.com(&quot;Website&quot;), owned and
+                operated by FCS (Fineant Consultant Service PVT LTD)
+                (&quot;MyClicker,&quot; &quot;we,&quot; &quot;us,&quot; or
+                &quot;our&quot;). These Terms and Conditions govern your use of
+                our Website and the services provided through it. By accessing
+                or using our Website, you agree to comply with and be bound by
+                these Terms and Conditions. If you do not agree with these
+                terms, please do not use our Website.
+              </label>
 
-              <li >
+              <li>
                 <h5>
-                  <bold>
-                    Use of the Website
-                  </bold>
+                  <bold>Use of the Website</bold>
                 </h5>
                 <h6>Eligibility</h6>
                 <label style={{ fontSize: "14px", textAlign: "justify" }}>
-
                   You must be at least 14 years old to use our Website and
                   services. By using our Website, you represent and warrant that
                   you are at least 14 years old.
                 </label>
               </li>
               <li style={{ textDecoration: "none" }}>
-                <h5>  License to Use</h5>
+                <h5> License to Use</h5>
                 <label style={{ fontSize: "14px", textAlign: "justify" }}>
-
                   We grant you a limited, non-exclusive, non-transferable,
                   revocable license to access and use our Website for personal
                   and non-commercial purposes. You may not use our Website for
@@ -91,8 +104,10 @@ const TermsandConditions = () => {
                 </label>
               </li>
               <li>
-                <h5>  User Responsibilities</h5>
-                <label style={{ fontSize: "14px" }}>When using our Website, you agree to:</label>
+                <h5> User Responsibilities</h5>
+                <label style={{ fontSize: "14px" }}>
+                  When using our Website, you agree to:
+                </label>
                 <label style={{ fontSize: "14px", textAlign: "justify" }}>
                   Provide accurate and up-to-date informationMaintain the
                   security and confidentiality of your account credentials
@@ -181,7 +196,6 @@ const TermsandConditions = () => {
                   Conditions shall be resolved
                 </label>
               </li>
-
             </ul>
           </div>
           {/* <div className="terms-container">
@@ -209,41 +223,52 @@ const TermsandConditions = () => {
             Accept the terms and conditions to complete <br />{" "}
             <span className="spanEleSmallScreen">your signup process</span>
           </p>
-          <div className="listContSmallScreen">
-          <ul style={{ listStyleType: 'none' }}>
-              <div style={{display:"flex",justifyContent:"space-between"}}>
-                <h4><b>Terms and Conditions</b></h4>
-                <h6>Effective Date:19-06-2023 </h6>
+          <div className="listContSmallScreen" style={{userSelect:"none"}}>
+            <ul style={{ listStyleType: "none" }}>
+            <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "20px 10px 10px 10px",
+                }}
+              >
+                <h3>
+                  <b>Terms and Conditions</b>
+                </h3>
+                <label style={{ fontSize: "12px" }}>
+                  (Effective Date: 19/06/2023){" "}
+                </label>
               </div>
 
-           <label style={{ fontSize: "14px", textAlign: "justify" }}>
-  Welcome to www.myclicker.com(&quot;Website&quot;), owned and operated by
-  FCS (Fineant Consultant Service PVT LTD) (&quot;MyClicker,&quot; &quot;we,&quot;
-  &quot;us,&quot; or &quot;our&quot;). These Terms and Conditions govern your use of
-  our Website and the services provided through it. By accessing
-  or using our Website, you agree to comply with and be bound by
-  these Terms and Conditions. If you do not agree with these
-  terms, please do not use our Website.
-</label>
 
-              <li >
+              <label style={{ fontSize: "13px", textAlign: "justify" }}>
+                Welcome to www.myclicker.com(&quot;Website&quot;), owned and
+                operated by FCS (Fineant Consultant Service PVT LTD)
+                (&quot;MyClicker,&quot; &quot;we,&quot; &quot;us,&quot; or
+                &quot;our&quot;). These Terms and Conditions govern your use of
+                our Website and the services provided through it. By accessing
+                or using our Website, you agree to comply with and be bound by
+                these Terms and Conditions. If you do not agree with these
+                terms, please do not use our Website.
+              </label>
+
+              <li>
                 <h5>
-                  <bold>
-                    Use of the Website
-                  </bold>
+                  <bold>Use of the Website</bold>
                 </h5>
                 <h6>Eligibility</h6>
                 <label style={{ fontSize: "14px", textAlign: "justify" }}>
-
                   You must be at least 14 years old to use our Website and
                   services. By using our Website, you represent and warrant that
                   you are at least 14 years old.
                 </label>
               </li>
               <li style={{ textDecoration: "none" }}>
-                <h5>  License to Use</h5>
+                <h5> License to Use</h5>
                 <label style={{ fontSize: "14px", textAlign: "justify" }}>
-
                   We grant you a limited, non-exclusive, non-transferable,
                   revocable license to access and use our Website for personal
                   and non-commercial purposes. You may not use our Website for
@@ -251,8 +276,10 @@ const TermsandConditions = () => {
                 </label>
               </li>
               <li>
-                <h5>  User Responsibilities</h5>
-                <label style={{ fontSize: "14px" }}>When using our Website, you agree to:</label>
+                <h5> User Responsibilities</h5>
+                <label style={{ fontSize: "14px" }}>
+                  When using our Website, you agree to:
+                </label>
                 <label style={{ fontSize: "14px", textAlign: "justify" }}>
                   Provide accurate and up-to-date informationMaintain the
                   security and confidentiality of your account credentials
@@ -425,41 +452,52 @@ const TermsandConditions = () => {
             Accept the terms and conditions to complete{" "}
             <span>your signup process</span>
           </p>
-          <div className="listContMediumScreen">
-          <ul style={{ listStyleType: 'none' }}>
-              <div style={{display:"flex",justifyContent:"space-between"}}>
-                <h4><b>Terms and Conditions</b></h4>
-                <h6>Effective Date:19-06-2023 </h6>
+          <div className="listContMediumScreen" style={{userSelect:"none"}}>
+            <ul style={{ listStyleType: "none" }}>
+            <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "20px 10px 10px 10px",
+                }}
+              >
+                <h3>
+                  <b>Terms and Conditions</b>
+                </h3>
+                <label style={{ fontSize: "12px" }}>
+                  (Effective Date: 19/06/2023){" "}
+                </label>
               </div>
 
-           <label style={{ fontSize: "14px", textAlign: "justify" }}>
-  Welcome to www.myclicker.com(&quot;Website&quot;), owned and operated by
-  FCS (Fineant Consultant Service PVT LTD) (&quot;MyClicker,&quot; &quot;we,&quot;
-  &quot;us,&quot; or &quot;our&quot;). These Terms and Conditions govern your use of
-  our Website and the services provided through it. By accessing
-  or using our Website, you agree to comply with and be bound by
-  these Terms and Conditions. If you do not agree with these
-  terms, please do not use our Website.
-</label>
 
-              <li >
+              <label style={{ fontSize: "14px", textAlign: "justify" }}>
+                Welcome to www.myclicker.com(&quot;Website&quot;), owned and
+                operated by FCS (Fineant Consultant Service PVT LTD)
+                (&quot;MyClicker,&quot; &quot;we,&quot; &quot;us,&quot; or
+                &quot;our&quot;). These Terms and Conditions govern your use of
+                our Website and the services provided through it. By accessing
+                or using our Website, you agree to comply with and be bound by
+                these Terms and Conditions. If you do not agree with these
+                terms, please do not use our Website.
+              </label>
+
+              <li>
                 <h5>
-                  <bold>
-                    Use of the Website
-                  </bold>
+                  <bold>Use of the Website</bold>
                 </h5>
                 <h6>Eligibility</h6>
                 <label style={{ fontSize: "14px", textAlign: "justify" }}>
-
                   You must be at least 14 years old to use our Website and
                   services. By using our Website, you represent and warrant that
                   you are at least 14 years old.
                 </label>
               </li>
               <li style={{ textDecoration: "none" }}>
-                <h5>  License to Use</h5>
+                <h5> License to Use</h5>
                 <label style={{ fontSize: "14px", textAlign: "justify" }}>
-
                   We grant you a limited, non-exclusive, non-transferable,
                   revocable license to access and use our Website for personal
                   and non-commercial purposes. You may not use our Website for
@@ -467,8 +505,10 @@ const TermsandConditions = () => {
                 </label>
               </li>
               <li>
-                <h5>  User Responsibilities</h5>
-                <label style={{ fontSize: "14px" }}>When using our Website, you agree to:</label>
+                <h5> User Responsibilities</h5>
+                <label style={{ fontSize: "14px" }}>
+                  When using our Website, you agree to:
+                </label>
                 <label style={{ fontSize: "14px", textAlign: "justify" }}>
                   Provide accurate and up-to-date informationMaintain the
                   security and confidentiality of your account credentials

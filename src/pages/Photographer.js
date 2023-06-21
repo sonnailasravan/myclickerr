@@ -1,4 +1,3 @@
-import MainHeader from "./MainHeader";
 import { Carousel, Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +7,6 @@ const photographer = () => {
   return (
     <div>
       <div className="NavBar">
-        <MainHeader />
       </div>
       <Container>
         <div className="headerphotographerhome">
@@ -147,7 +145,7 @@ const photographer = () => {
           <div className="photographerborder"></div>
           <div className="photographermain-smallimage">
             <div>
-              <Image src="/images/person.jpg.png" alt="Image" />
+              <Image src="/images/person.jpg.png" alt="Image" width={40} height={40} />
             </div>
 
             <div>

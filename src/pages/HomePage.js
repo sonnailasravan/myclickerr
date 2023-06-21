@@ -57,29 +57,29 @@ const Homepage = () => {
 
   const photographers = [
     {
-      name: "Richard Chawez",
+      name: "Sonal Dalmia ",
       title: "Wedding photographer",
       rating: "4.8 ★",
       bookings: 25,
       image: "Images/person1.png", 
     },
     {
-      name: "Rian Hayes",
+      name: "Sharath Chandra",
       title: "Portrait photographer",
       rating: "4.8 ★",
       bookings: 25,
       image: "Images/person2.png", 
     },
     {
-      name: "Alex Barnett",
+      name: "Aryan kumar",
       title: "Wildlife photographer",
       rating: "4.8 ★",
       bookings: 25,
       image: "Images/person3.png", 
     },
     {
-      name: "Alex Hayes",
-      title: "Birthday photographer",
+      name: "Abhimanyu Sharma",
+      title: "Documentary photographer",
       rating: "4.8 ★",
       bookings: 25,
       image: "Images/person4.png", 
@@ -206,18 +206,18 @@ const Homepage = () => {
                           </Row>
                           <Row>
                             <Col>
-                              <Link href="/Photographer">
+                              {/* <Link href="/Photographer"> */}
                                 <button className={style.detailsbtn}>
                                   View Details
                                 </button>
-                              </Link>
+                              {/* </Link> */}
                             </Col>
                             <Col>
-                              <Link href="NewBooking">
+                              {/* <Link href="NewBooking"> */}
                                 <button className={style.bookbtn}>
                                   Book Now
                                 </button>
-                              </Link>
+                              {/* </Link> */}
                             </Col>
                           </Row>
                         </div>
@@ -399,7 +399,7 @@ const Homepage = () => {
           <Row className={style.rowGap}>
             <Col md={3} className="position-relative">
               <Image
-                src="/Images/Ourprocess/weeding.jpg"
+                src="/Images/Ourprocess/WeedingPhotography.png"
                 alt="Image 1"
                 className={`w-100 ${style.dullImage}`}
               />
@@ -407,7 +407,7 @@ const Homepage = () => {
             </Col>
             <Col md={3} className="position-relative">
               <Image
-                src="/Images/Ourprocess/portrait.jpg"
+                src="/Images/Ourprocess/portraitPhotography.png"
                 alt="Image 2"
                 className={`w-100 ${style.dullImage}`}
               />
@@ -415,7 +415,7 @@ const Homepage = () => {
             </Col>
             <Col md={3} className="position-relative">
               <Image
-                src="/Images/Ourprocess/wildLife.jpg"
+                src="/Images/Ourprocess/wildLifePhotography.png"
                 alt="Image 3"
                 className={`w-100 ${style.dullImage} h-100`}
               />
@@ -423,7 +423,7 @@ const Homepage = () => {
             </Col>
             <Col md={3} className="position-relative">
               <Image
-                src="/Images/Ourprocess/Documentary.png"
+                src="/Images/Ourprocess/documentaryPhotography.png"
                 alt="Image 4"
                 className={`w-100 ${style.dullImage} h-100`}
               />
@@ -434,7 +434,7 @@ const Homepage = () => {
 
         {/* Testimonals */}
 
-        <Carousel fade>
+        <Carousel fade className={style.Carousel}>
           <Carousel.Item className={style.CaroselContainer}>
             <h1>Testimonals</h1>
             <section className="innerCard">
@@ -444,7 +444,7 @@ const Homepage = () => {
                   src="Images/Rectangle 2917@2x.jpg"
                   alt="First slide"
                 />
-                <label>Christine Mendoza</label>
+                <label>Sudhir kumar</label>
               </div>
               <div>
                 <label>
@@ -466,7 +466,7 @@ const Homepage = () => {
                   src="Images/person2.png"
                   alt="First slide"
                 />
-                <label>Alen Walker</label>
+                <label>Rahul Patwa</label>
               </div>
               <div>
                 <label>

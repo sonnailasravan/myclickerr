@@ -49,13 +49,24 @@ const refund = () => {
           <label className="OTPField">
             Accept the terms and conditions to complete your signup process
           </label> */}
-          <div className="static-content-container">
+          <div className="static-content-container" style={{ userSelect: "none" }}>
             <ul style={{ listStyleType: "none" }}>
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <h4>
+            <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "20px 10px 10px 10px",
+                }}
+              >
+                <h3>
                   <b>Refund Policy</b>
-                </h4>
-                <h6>Effective Date: 19-06-2023 </h6>
+                </h3>
+                <label style={{ fontSize: "12px" }}>
+                  (Effective Date: 19/06/2023){" "}
+                </label>
               </div>
 
             <label style={{ fontSize: "14px", textAlign: "justify" }}>
@@ -184,7 +195,7 @@ const refund = () => {
           </Link> */}
         </Col>
         <Col className="formColumnSmallscreen">
-          <Image
+          {/* <Image
             className="navbarsmallscreenTermsAndCondition"
             src="/images/Ourprocess/Group 5982@2x.png"
             alt="Your Logo"
@@ -199,16 +210,26 @@ const refund = () => {
           <p className="paraEleTermsAndCondSmallScreen">
             Accept the terms and conditions to complete <br />{" "}
             <span className="spanEleSmallScreen">your signup process</span>
-          </p>
-          <div className="listContSmallScreen">
+          </p> */}
+          <div className="listContSmallScreen" style={{userSelect:"none"}}>
           <ul style={{ listStyleType: "none" }}>
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <h4>
+          <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "20px 10px 10px 10px",
+                }}
+              >
+                <h3>
                   <b>Refund Policy</b>
-                </h4>
-                <h6>Effective Date: 19-06-2023 </h6>
+                </h3>
+                <label style={{ fontSize: "12px" }}>
+                  (Effective Date: 19/06/2023){" "}
+                </label>
               </div>
-
             <label style={{ fontSize: "14px", textAlign: "justify" }}>
   Thank you for choosing MyClicker Photography Services
   (&quot;MyClicker,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). This Refund Policy explains
@@ -353,16 +374,27 @@ const refund = () => {
             Welcome to MyClicker
           </h1>
           <p className="paraEleTermsAndCondMediumScreen">
-            Accept the terms and conditions to complete{" "}
-            <span>your signup process</span>
+            {/* Accept the terms and conditions to complete{" "}
+            <span>your signup process</span> */}
           </p>
-          <div className="listContMediumScreen">
+          <div className="listContMediumScreen" style={{userSelect:"none"}}>
           <ul style={{ listStyleType: "none" }}>
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <h4>
+          <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "20px 10px 10px 10px",
+                }}
+              >
+                <h3>
                   <b>Refund Policy</b>
-                </h4>
-                <h6>Effective Date: 19-06-2023 </h6>
+                </h3>
+                <label style={{ fontSize: "12px" }}>
+                  (Effective Date: 19/06/2023){" "}
+                </label>
               </div>
 
             <label style={{ fontSize: "14px", textAlign: "justify" }}>

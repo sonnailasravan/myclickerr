@@ -53,7 +53,7 @@ function Aboutus() {
         <div className="element_aboutus">
           <div class="transparancy">
             <Image
-              src="/images/ICON1.png"
+              src="/Images/ICON1.png"
               alt="Image 1"
               style={{ width: "" }}
               width={54}
@@ -63,7 +63,7 @@ function Aboutus() {
           </div>
           <div className="transparancy">
             <Image
-              src="/images/Group 5987@2x.png"
+              src="/Images/Group 5987@2x.png"
               alt="Image 1"
               style={{ width: "auto" }}
               width={54}
@@ -73,7 +73,7 @@ function Aboutus() {
           </div>
           <div className="transparancy">
             <Image
-              src="/images/icon3.png"
+              src="/Images/icon3.png"
               alt="Image 1"
               style={{ width: "auto" }}
               width={54}
@@ -83,7 +83,7 @@ function Aboutus() {
           </div>
           <div className="transparancy">
             <Image
-              src="/images/ICON1.png"
+              src="/Images/ICON1.png"
               alt="Image 1"
               style={{ width: "" }}
               width={54}
@@ -105,7 +105,7 @@ function Aboutus() {
         <div className="aboutus_img_item">
           <div>
             <Image
-              src="/images/pexels-anna-shvets-5325105@2x.png"
+              src="/Images/pexels-anna-shvets-5325105@2x.png"
               alt="Image 1"
               style={{ width: "" }}
               width={233.3}
@@ -116,7 +116,7 @@ function Aboutus() {
           </div>
           <div>
             <Image
-              src="/images/pexels-emmy-e-2381069@2x.png"
+              src="/Images/pexels-emmy-e-2381069@2x.png"
               alt="Image 1"
               style={{ width: "" }}
               width={233.33}
@@ -127,7 +127,7 @@ function Aboutus() {
           </div>
           <div>
             <Image
-              src="/images/pexels-emre-keshavarz-3752128@2x.png"
+              src="/Images/pexels-emre-keshavarz-3752128@2x.png"
               alt="Image 1"
               style={{ width: "" }}
               width={233.33}

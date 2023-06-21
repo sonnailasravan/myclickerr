@@ -39,10 +39,10 @@ const MainHeader = () => {
             <Nav.Link href='/FAQ'>FAQ`s</Nav.Link>
             {/* <Nav.Link href='/popularPhotographers'>Popular Photographers</Nav.Link> */}
             <Nav.Link href="/contactUs">Contact us</Nav.Link>
-            <Nav.Link
+            <Nav.Link 
             //  onClick={onClickSignup}
             >
-              Download Now
+             Download Now
             </Nav.Link>
             {/* { openProfile && <Dropdownprofiles/> } */}
             {/* <Link href="/Login">

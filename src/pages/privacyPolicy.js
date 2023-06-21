@@ -49,13 +49,24 @@ const privacyPolicy = () => {
           <label className="OTPField">
             Accept the terms and conditions to complete your signup process
           </label> */}
-          <div className="static-content-container">
+          <div className="static-content-container" style={{userSelect:"none"}}>
             <ul style={{ listStyleType: "none" }}>
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <h4>
-                  <b>PrivacyPolicy</b>
-                </h4>
-                <h6>Effective Date:19-06-2023 </h6>
+            <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "20px 10px 10px 10px",
+                }}
+              >
+                <h3>
+                  <b>Privacy Policy</b>
+                </h3>
+                <label style={{ fontSize: "12px" }}>
+                  (Effective Date: 19/06/2023){" "}
+                </label>
               </div>
 
               <label style={{ fontSize: "14px", textAlign: "justify" }}>
@@ -227,7 +238,7 @@ const privacyPolicy = () => {
           </Link> */}
         </Col>
         <Col className="formColumnSmallscreen">
-          <Image
+          {/* <Image
             className="navbarsmallscreenTermsAndCondition"
             src="/images/Ourprocess/Group 5982@2x.png"
             alt="Your Logo"
@@ -242,14 +253,25 @@ const privacyPolicy = () => {
           <p className="paraEleTermsAndCondSmallScreen">
             Accept the terms and conditions to complete <br />{" "}
             <span className="spanEleSmallScreen">your signup process</span>
-          </p>
-          <div className="listContSmallScreen">
+          </p> */}
+          <div className="listContSmallScreen" style={{userSelect:"none"}}>
             <ul style={{ listStyleType: "none" }}>
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <h4>
-                  <b>PrivacyPolicy</b>
-                </h4>
-                <h6>Effective Date:19-06-2023 </h6>
+            <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "20px 10px 10px 10px",
+                }}
+              >
+                <h3>
+                  <b>Privacy Policy</b>
+                </h3>
+                <label style={{ fontSize: "12px" }}>
+                  (Effective Date: 19/06/2023){" "}
+                </label>
               </div>
 
               <label style={{ fontSize: "14px", textAlign: "justify" }}>
@@ -423,7 +445,7 @@ const privacyPolicy = () => {
         </Col>
 
         <Col className="formColumnMediumscreen">
-          <Image
+          {/* <Image
             className="navbarMediumscreenTermsAndCondition"
             src="/images/Ourprocess/Group 5982@2x.png"
             alt="Your Logo"
@@ -434,18 +456,29 @@ const privacyPolicy = () => {
 
           <h1 className="headingEleTermsAndConMediumScreen">
             Welcome to MyClicker
-          </h1>
-          <p className="paraEleTermsAndCondMediumScreen">
+          </h1> */}
+          {/* <p className="paraEleTermsAndCondMediumScreen">
             Accept the terms and conditions to complete{" "}
             <span>your signup process</span>
-          </p>
-          <div className="listContMediumScreen">
+          </p> */}
+          <div className="listContMediumScreen" style={{userSelect:"none"}}>
             <ul style={{ listStyleType: "none" }}>
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <h4>
-                  <b>PrivacyPolicy</b>
-                </h4>
-                <h6>Effective Date:19-06-2023 </h6>
+            <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "20px 10px 10px 10px",
+                }}
+              >
+                <h3>
+                  <b>Privacy Policy</b>
+                </h3>
+                <label style={{ fontSize: "12px" }}>
+                  (Effective Date: 19/06/2023){" "}
+                </label>
               </div>
 
               <label style={{ fontSize: "14px", textAlign: "justify" }}>
