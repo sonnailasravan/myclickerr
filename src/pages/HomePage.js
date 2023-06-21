@@ -415,7 +415,7 @@ const Homepage = () => {
             </Col>
             <Col md={3} className="position-relative">
               <Image
-                src="/Images/Ourprocess/wildLifePhotography.png"
+                src="/Images/Ourprocess/wildlifePhotography.png"
                 alt="Image 3"
                 className={`w-100 ${style.dullImage} h-100`}
               />
