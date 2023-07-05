@@ -7,7 +7,7 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>MyClicker</title>
+        <title>MyClickerr</title>
       </Head>
       <Homepage/>
     </div>

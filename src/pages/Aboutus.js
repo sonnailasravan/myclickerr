@@ -135,6 +135,18 @@ function Aboutus() {
             <label>Sandeep Reddy</label>
             <p>Chief Operations Officer</p>
           </div>
+          <div>
+            {/* <Image
+              src="/Images/pexels-emre-keshavarz-3752128@2x.png"
+              alt="Image 1"
+              style={{ width: "" }}
+              width={233.33}
+              height={259.72}
+            /> */}
+          
+            <label> Hitesh Varma </label>
+            <p>Marketing Head</p>
+          </div>
         </div>
       </Container>
       {/* Download */}
