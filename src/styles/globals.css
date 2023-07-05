@@ -1965,9 +1965,7 @@ input[type="text"]:focus::placeholder {
     top: 35%;
     left: 10%;
   }
-  .loading_img {
-    /* border: 2px solid red; */
-  }
+  
   .main_aboutus_container > div:nth-child(1) label {
     /* border: 2px solid red; */
     max-width: 88%;
@@ -2017,8 +2015,9 @@ input[type="text"]:focus::placeholder {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 4.5vw;
     margin-top: 4vh;
-    margin-right: 20vw;
+    margin-right: 23rem;
     margin-bottom: 5vh;
+    /* border: 2px solid red; */
   }
   .element_aboutus label {
     color: #f8f4ee;
@@ -2342,7 +2341,7 @@ input[type="text"]:focus::placeholder {
     display: grid;
     /* grid-template-rows: repeat(2, 1fr); */
   }
-
+  
   .aboutdownloadtextitem {
     margin: 5vh;
     /* border: 2px solid red; */
@@ -2468,12 +2467,7 @@ input[type="text"]:focus::placeholder {
     display: flex;
     justify-content: center;
   }
-  @media only screen and (min-width: 578px) and (max-width: 991px) {
-    .main_aboutus_container {
-      display: grid;
-      /* grid-template-rows:; */
-    }
-  }
+   
   .main_aboutus_container > div:nth-child(1) {
     position: relative;
     top: 10%;
@@ -5221,9 +5215,6 @@ input[type="text"]:focus::placeholder {
     height: 0.4vh;
     width: 100vw;
     box-shadow: 0.2px 0.4px 0.4px 0px #e2e8ed;
-  }
-
-  .TitleOnlyConfirmBooking {
   }
 
   .nameSmallConfirmBook {

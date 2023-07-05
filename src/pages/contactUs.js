@@ -17,7 +17,7 @@ const contactUs = () => {
                 width={15}
                 height={15}
               />
-              <label>support@myclicker.in</label>
+              <label>support@myclickerr.in</label>
             </div>
             <div>
               <Image
@@ -43,7 +43,7 @@ const contactUs = () => {
           </div>
         </div>
         <div className={styles.contactRightSide}>
-          <h3>Get in touch with us</h3>
+          <h3>Get In Touch With Us</h3>
           <div className={styles.contactform}>
             <input type="text" placeholder="Name" />
             <input type="tel" placeholder="Mobile Number" />

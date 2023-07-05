@@ -11,16 +11,16 @@ const Footer = () => {
           <div className="myfooter">
             <div>
               <Image
-                src="/Images/Group 5981@2x.png"
+                src="/Images/Group 5981.png"
                 alt="Your Logo"
                 width={182}
                 height={40}
               />
               <label>
-                At Myclickerr, we understand the importance of photography in
-                preserving memories that last a lifetime. Whether it&apos;s a
+                At Myclickerr, We understand the importance of photography in
+                preserving memories that last a lifetime. Whether it is a
                 wedding, a family portrait, a corporate event, or a special
-                occasion, we believe that every moment deserves to be cherished
+                occasion, We believe that every moment deserves to be cherished
                 and captured in its true essence.
               </label>
             </div>
@@ -67,7 +67,7 @@ const Footer = () => {
                 width={16}
                 height={14}
               />
-              <label>support@myclicker.in</label>
+              <label>support@myclickerr.in</label>
             </div>
             <div>
               <Image
@@ -93,11 +93,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="footerlast">
-          <p>@ 2023 Myclickerr , All rights reserved</p>
+          <p>@ 2023 Myclickerr , All Rights Reserved</p>
           <div className="footer_policy">
             <ul>
               <Link href="TermsandConditions">
-                <li>Terms and Conditions</li>
+                <li>Terms & Conditions</li>
               </Link>
               <Link href="privacyPolicy">
                 <li>Privacy Policy</li>

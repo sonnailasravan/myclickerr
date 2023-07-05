@@ -306,8 +306,10 @@
 
 .photographerCard img {
   width: 40%;
-  height: auto;
-  border-radius: 10px;
+  max-height: 86px;
+  height: 0% !important;
+  /* border: 2px solid red; */
+  border-radius: 50%;
   margin-bottom: 10px;
   display: block;
   margin: 0 auto;

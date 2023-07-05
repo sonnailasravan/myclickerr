@@ -58,31 +58,31 @@ const Homepage = () => {
   const photographers = [
     {
       name: "Sonal Dalmia ",
-      title: "Wedding photographer",
+      title: "Wedding Photographer",
       rating: "4.8 ★",
       bookings: 25,
-      image: "Images/person1.png", 
+      image: "Images/1681596501454.jpg", 
     },
     {
       name: "Sharath Chandra",
-      title: "Portrait photographer",
+      title: "Portrait Photographer",
       rating: "4.8 ★",
       bookings: 25,
-      image: "Images/person2.png", 
+      image: "Images/istockphoto-1325350283-612x612.jpg", 
     },
     {
       name: "Aryan kumar",
-      title: "Wildlife photographer",
+      title: "Wildlife Photographer",
       rating: "4.8 ★",
       bookings: 25,
-      image: "Images/person3.png", 
+      image: "Images/istockphoto-1338289824-612x612.jpg", 
     },
     {
       name: "Abhimanyu Sharma",
-      title: "Documentary photographer",
+      title: "Documentary Photographer",
       rating: "4.8 ★",
       bookings: 25,
-      image: "Images/person4.png", 
+      image: "Images/1640606371084.jpg", 
     },
   ];
   const settings = {
@@ -131,7 +131,7 @@ const Homepage = () => {
               
             </p>
 
-            <button className={style.BookingButton}>Book a photographer</button>
+            <button className={style.BookingButton}>Book a Photographer</button>
           </div>
           {/* <div> */}
             <div
@@ -174,7 +174,7 @@ const Homepage = () => {
           <Row className={style.photographersDisplay}>
             <Col>
               <div>
-                <h1>Our popular photographers</h1>
+                <h1>Our Popular Photographers</h1>
               </div>
             </Col>
           </Row>
@@ -229,7 +229,7 @@ const Homepage = () => {
             </Slider>
           </div>
           <button className={style.viewphotographersButton}>
-            View all photographers
+            View all Photographers
           </button>
         </Container>
         {/* Our Process */}
@@ -243,7 +243,7 @@ const Homepage = () => {
               />
             </Col>
             <Col xs={12} md={6}>
-              <h2>Our process</h2>
+              <h2>Our Process</h2>
               <Row className={style.processSteps}>
                 <div>
                   <Col xs={2}>
@@ -256,8 +256,8 @@ const Homepage = () => {
                     </div>
                   </Col>
                   <Col xs={10}>
-                    <p>Choose a photographer</p>
-                    <h6>Choose a photographer of your choice from the results.</h6>
+                    <p>Choose a Photographer</p>
+                    <h6>Choose a Photographer of your choice from the results.</h6>
                   </Col>
                 </div>
                 <div>
@@ -271,8 +271,8 @@ const Homepage = () => {
                     </div>
                   </Col>
                   <Col xs={10}>
-                    <p>Add event details</p>
-                    <h6>Type of event, Location, Date, Budget.</h6>
+                    <p>Add Event Details</p>
+                    <h6>Type of Event, Location, Date, Budget.</h6>
                   </Col>
                 </div>
                 <div>
@@ -286,8 +286,8 @@ const Homepage = () => {
                     </div>
                   </Col>
                   <Col xs={10}>
-                    <p>Wait for photographer’s approval</p>
-                    <h6>Wait for few minutes, Let photographer go through your requirements.</h6>
+                    <p>Wait for Photographer’s approval</p>
+                    <h6>Wait for few minutes, Let Photographer go through your requirements.</h6>
                   </Col>
                 </div>
                 <div>
@@ -301,8 +301,8 @@ const Homepage = () => {
                     </div>
                   </Col>
                   <Col xs={10}>
-                    <p>That’s it. You’re booking is confirmed</p>
-                    <h6>Once photographer accepts your order, Your booking will be confirmed.</h6>
+                    <p>That’s it. You’re Booking is Confirmed</p>
+                    <h6>Once Photographer accepts your order, Your Booking will be Confirmed.</h6>
                   </Col>
                 </div>
               </Row>
@@ -394,7 +394,7 @@ const Homepage = () => {
         {/* EventS Handling */}
         <Container>
           <div className={style.eventsHandling}>
-            <h2 className="text-center">We can handle any event</h2>
+            <h2 className="text-center">We Can Handle Any Event</h2>
           </div>
           <Row className={style.rowGap}>
             <Col md={3} className="position-relative">
@@ -441,7 +441,7 @@ const Homepage = () => {
               <div>
                 <Image
                   className="innerImage"
-                  src="Images/Rectangle 2917@2x.jpg"
+                  src="Images/Testimonials1.PNG"
                   alt="First slide"
                 />
                 <label>Sudhir kumar</label>
@@ -463,7 +463,7 @@ const Homepage = () => {
               <div>
                 <Image
                   className="innerImage"
-                  src="Images/person2.png"
+                  src="Images/Testimonials2.PNG"
                   alt="First slide"
                 />
                 <label>Rahul Patwa</label>
@@ -483,21 +483,21 @@ const Homepage = () => {
             <div className={style.mobilescreeens}>
               {/* <Col xs={12} md={6}> */}
               <Image
-                src="/Images/Ourprocess/Mobile2.png"
+                src="/Images/Ourprocess/MicrosoftTeams-image.png"
                 alt="Image"
                 style={{ maxWidth: "90%", marginTop: "170px", gap: "10px" }}
               />
               <Image
-                src="/Images/Ourprocess/Mobile1.png"
+                src="/Images/Ourprocess/MicrosoftTeams-image (1).png"
                 alt="Image"
                 style={{ maxWidth: "90%" }}
               />
               {/* </Col> */}
             </div>
-            <div>
+          <div>
               {/* <Col xs={12} md={6}> */}
               <h2 className="animate__animated animate__fadeIn">
-                Download MyClicker Mobile app
+                Download MyClickerr Mobile App
               </h2>
               <label>
               With flexible hourly rates, Book professional photographer for your need in few simple clicks. Myclickerr helps you to find the best photographer near you that too at your own budget..!!
