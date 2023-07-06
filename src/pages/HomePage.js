@@ -68,14 +68,14 @@ const Homepage = () => {
       title: "Portrait Photographer",
       rating: "4.8 ★",
       bookings: 25,
-      image: "Images/istockphoto-1325350283-612x612.jpg", 
+      image: "Images/122.png", 
     },
     {
       name: "Aryan kumar",
       title: "Wildlife Photographer",
       rating: "4.8 ★",
       bookings: 25,
-      image: "Images/istockphoto-1338289824-612x612.jpg", 
+      image: "Images/Untitled-1.png", 
     },
     {
       name: "Abhimanyu Sharma",

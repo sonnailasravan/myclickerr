@@ -50,7 +50,7 @@ function Aboutus() {
             <h1>Our Core Values</h1>
           </div>
           <div className="element_aboutus">
-            <div class="transparancy">
+            <div className="transparancy">
               <Image
                 src="/Images/ICON1.png"
                 alt="Image 1"
@@ -111,7 +111,7 @@ function Aboutus() {
               height={259.72}
             /> */}
             <label>Bharath Reddy</label>
-            <p>Founder and CEO</p>
+            <p>Founder</p>
           </div>
           <div>
             {/* <Image
@@ -122,7 +122,7 @@ function Aboutus() {
               height={259.72}
             /> */}
             <label>Sharath Reddy</label>
-            <p>CTO and Co-Founder</p>
+            <p>Co-Founder and CEO</p>
           </div>
           <div>
             {/* <Image
