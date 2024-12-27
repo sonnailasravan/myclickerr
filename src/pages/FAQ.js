@@ -94,8 +94,10 @@ function FAQ() {
             </div>
           </Accordion>
         </Container>
+        
       </Container>
     </div>
+    
   );
 }
 
